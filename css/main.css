@@ -1,0 +1,332 @@
+/* General Styling */
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2c2c2c;
+}
+
+html, body {
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+hr {
+    position: relative;
+    border: 1px solid #D5D5D5;
+}
+
+.subheader {
+    font-weight: bold;
+}
+
+.flex-buffer {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Top Navbar */
+.site-icon {
+    height: 32px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#navbar-image {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    z-index: -1;
+
+    background-image: url("../files/images/screenshots/skywind-shipwreck-dark.jpg");
+    background-size: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+#navbar {
+    /* position: absolute; */
+    display: inline-flex;
+    flex-wrap: nowrap;
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+    z-index: 1;
+}
+
+#navbar div {
+    position: relative;
+    color: white;
+    margin-right: 24px;
+    font-size: 16px;
+}
+
+#navbar div a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar div a img {
+    height: 24px;
+    width: auto;
+}
+
+#navbar div:first-child {
+    left: 16px;
+    flex-grow: 1;
+}
+
+#navbar div:first-child span {
+    color: white;
+    margin-left: 40px;
+}
+
+#navbar div:first-child span b {
+    color: white;
+}
+
+.item-left {
+    align-self: center;
+    justify-content: flex-start;
+}
+
+.item-right {
+    align-self: center;
+    justify-content: flex-end;
+}
+
+/* Name & Title Header */
+#name {
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name h1 {
+    margin: 0;
+}
+
+#name h4 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+/* Projects */
+#projects {
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card div {
+    position: absolute;
+}
+
+.project-card h3 {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: white;
+    text-align: center;
+}
+
+.project-card h3:first-child {
+    flex-grow: 1;
+    align-self: flex-end;
+}
+
+.project-card h3:last-child {
+    flex-grow: 1;
+    align-self: flex-start;
+}
+
+#skywind {
+    position: relative;
+    width: 60%;
+    height: auto;
+    display: flex;
+}
+
+#skywind-card-text {
+    opacity: 0;
+    width: 100%;
+}
+
+/* Skywind Project Page */
+.responsive {
+    flex-direction: column !important;
+}
+
+.responsive h2 {
+    display: none;
+    width: 100%;
+}
+
+.responsive hr {
+    display: none;
+    width: 100%;
+}
+
+.project-header {
+    padding-top: 40px;
+    position: relative;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-header-image {
+    display: flex;
+    flex-grow: 2;
+    flex-basis: auto;
+    align-self: flex-start;
+}
+
+.project-header-image img {
+    width: 100%;
+    height: auto;
+    /* object-fit: scale-down; */
+    align-self: flex-start;
+}
+
+.project-header-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding-left: 40px;
+}
+
+.project-header-text h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+.project-header-text hr {
+    width: 100%;
+}
+
+.project-header-text .subheader {
+    margin-top: 16px;
+}
+
+.project-header-text p {
+    margin-top: 0;
+    margin-bottom: 0;
+    word-wrap: normal;
+}
+
+.project-header-text p {
+    word-wrap: normal;
+}
+
+.project-social-links {
+    display: inline-flex;
+    padding-top: 16px;
+}
+
+.project-social-links div {
+    width: fit-content;
+    height: auto;
+    padding-right: 16px;
+}
+
+.project-social-links img {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    /* filter: invert(0%) sepia(96%) saturate(14%) hue-rotate(11deg) brightness(93%) contrast(100%); */
+}
+
+@media screen and (max-width: 1080px) {
+    .project-header {
+        padding-top: 24px !important;
+    }
+    .responsive h2 {
+        display: block;
+    }
+    .responsive hr {
+        display: block;
+    }
+    .project-header-text h2 {
+        display: none;
+    }
+    .project-header-text hr {
+        display: none;
+    }
+}
+
+/* TODO - fix sizing below 500px width */
+@media screen and (max-width: 768px) {
+    .project-header {
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+    .responsive h2 {
+        width: 100%;
+        text-align: center !important;
+    }
+    .project-header-image {
+        flex-wrap: wrap !important;
+        width: 100% !important;
+        align-content: center !important;
+    }
+    .project-header-image img {
+        width: 80% !important;
+        padding-left: 10%;
+    }
+    .project-header-text {
+        padding-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+/* Project Tabs */
+.project-tabs {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-tabs hr {
+    width: 100%;
+}
+
+/* World Encounters */
+
+/* Item Descriptions */
+
+
+/* Quests */
