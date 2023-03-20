@@ -119,6 +119,10 @@ hr {
 }
 
 /* Projects */
+.homepage-hr {
+    width: 60%;
+}
+
 #projects {
     height: fit-content;
     position: relative;
@@ -266,6 +270,103 @@ hr {
     /* filter: invert(0%) sepia(96%) saturate(14%) hue-rotate(11deg) brightness(93%) contrast(100%); */
 }
 
+/* Project Tabs */
+.project-tabs {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tabs-border {
+    width: 100%;
+}
+
+.project-tabs a {
+    color: #565656;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.tab-selected a {
+    color: #FF7542;
+}
+
+.project-tabs-collapse {
+    display: none;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-tab-title {
+    flex-grow: 1;
+}
+
+.project-tab-title h3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.project-tab-hamburger {
+    align-self: center;
+}
+
+.project-tab-close {
+    display: none;
+    align-self: center;
+}
+
+#hamburger-nav {
+	position: relative;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.menu-option {
+    align-self: flex-end;
+    padding-bottom: 16px;
+}
+
+.hamburger-menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.page-content {
+    display: none;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content-selected {
+    display: flex !important;
+}
+
+/* World Encounters */
+
+
+/* Item Descriptions */
+
+
+/* Quests */
+
+
+/* Media Query Breakpoints */
 @media screen and (max-width: 1080px) {
     .project-header {
         padding-top: 24px !important;
@@ -307,26 +408,16 @@ hr {
         padding-left: 0 !important;
         width: 100% !important;
     }
+    .project-tabs {
+        display: none;
+    }
+    .project-tabs-collapse {
+        display: flex;
+    }
 }
 
-/* Project Tabs */
-.project-tabs {
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-    position: relative;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+@media screen and (min-width: 768px) {
+    .hamburger-menu {
+        display: none !important;
+    }
 }
-
-.project-tabs hr {
-    width: 100%;
-}
-
-/* World Encounters */
-
-/* Item Descriptions */
-
-
-/* Quests */
