@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Dunmer Steel Armor
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="dun_steel-helm"
+                class="modal-image"
+                onclick="openItemModal('#dun_steel-helm-modal')"
+                src="../../files/images/item_images_text/dun_steel/dun_steel-helm.png">
+        </div>
+        <div>
+            <img 
+                id="dun_steel-cuirass"
+                class="modal-image"
+                onclick="openItemModal('#dun_steel-cuirass-modal')"
+                src="../../files/images/item_images_text/dun_steel/dun_steel-cuirass.png">
+        </div>
+        <div>
+            <img 
+                id="dun_steel-gauntlets"
+                class="modal-image"
+                onclick="openItemModal('#dun_steel-gauntlets-modal')"
+                src="../../files/images/item_images_text/dun_steel/dun_steel-gauntlets.png">
+        </div>
+        <div>
+            <img 
+                id="dun_steel-boots"
+                class="modal-image"
+                onclick="openItemModal('#dun_steel-boots-modal')"
+                src="../../files/images/item_images_text/dun_steel/dun_steel-boots.png">
+        </div>
+        <div>
+            <img 
+                id="dun_steel-pauldrons"
+                class="modal-image"
+                onclick="openItemModal('#dun_steel-pauldrons-modal')"
+                src="../../files/images/item_images_text/dun_steel/dun_steel-pauldrons.png">
+        </div>
+        <div>
+            <img 
+                id="dun_steel-greaves"
+                class="modal-image"
+                onclick="openItemModal('#dun_steel-greaves-modal')"
+                src="../../files/images/item_images_text/dun_steel/dun_steel-greaves.png">
+        </div>
+        <div>
+            <img 
+                id="dun_steel-buckler"
+                class="modal-image"
+                onclick="openItemModal('#dun_steel-buckler-modal')"
+                src="../../files/images/item_images_text/dun_steel/dun_steel-buckler.png">
+        </div>
+        <div>
+            <img 
+                id="dun_steel-shield"
+                class="modal-image"
+                onclick="openItemModal('#dun_steel-shield-modal')"
+                src="../../files/images/item_images_text/dun_steel/dun_steel-shield.png">
+        </div>
+        <div>
+            <img 
+                id="dun_steel-tower"
+                class="modal-image"
+                onclick="openItemModal('#dun_steel-tower-modal')"
+                src="../../files/images/item_images_text/dun_steel/dun_steel-tower.png">
+        </div>
+    </div>
+
+    <div id="dun_steel-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Steel Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Helm - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A crested helm of ashen steel wrapped in azure velk-wool. It may be a common sight on Vvardenfell's itinerant warriors, but few remain who know its origin.
+                        <br><br>
+                        Saint Veloth's pilgrimage divided upon its arrival in Resdayn. Though most settled upon the smoldering shores that would one day bear the Great Houses, others held that the path was never meant to end.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_steel-cuirass-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Steel Cuirass</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Cuirass - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The darkened steel plates and scaled tabard of this cuirass are muted, stripped of the grandeur that once radiated from the heart of Resdayn.
+                        <br><br>
+                        It is said that when leading a battle charge, Lord Nerevar shone like the spirits of Old Ehlnofey. Long ago, his order of knights sought to rekindle the light of the moons and stars, which seemed to dim with his passing.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_steel-gauntlets-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Steel Gauntlets</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Gauntlets - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The fading orders of Dunmeri knights interwove bladework and sorcery in their fighting styles. As such, these gauntlets of bull netch leather and scaled steel are highly flexible to enable varied ways of killing.
+                        <br><br>
+                        Steel to rend flesh, magicka to burn spirit. Acts of violence are always brutal, and the knights of Vvardenfell are versed in all. The importance lies in whether such violence is a necessity or an indulgence.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_steel-boots-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Steel Boots</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Boots - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The collected imperfections marring these frayed steel and guarhide boots are testament to their journey across Tamriel -  crimson sand grains from Anequina's deep canyons, minute frost fractures from the Jerall and Druadach Mountains, and perhaps even a glint of light from the fractal spires of Alinor.
+                        <br><br>
+                        Slipping them on fills your heart with the spirit of ageless wandering, and the path ahead seems to clear.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_steel-pauldrons-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Steel Pauldrons</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldrons - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The steel plates of these heavy cleft pauldrons are imbued with dark ash from Red Mountain. This gives each plate an obsidian hue, and ensures that a Dunmer's home is never far.
+                        <br><br>
+                        Nerevar's Order began as six - the wisest and mightiest heroes from each of the Great Houses. Following House Dagoth's betrayal and the death of Nerevar himself, the remaining five expanded their ranks to ensure their order would survive.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_steel-greaves-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Steel Greaves</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Greaves - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Knights of the Order of Nerevar wore hardy cloth pants bearing the azure standard of their martyred Lord. In this way the colors of House Indoril accompanied their honorable deeds across Morrowind.
+                        <br><br>
+                        As isolated nomads, the knights wove both cloth and steel. Their vibrant tapestries depicting antique histories still lie in lost shrines and forgotten tombs.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_steel-buckler-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Steel Buckler Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Buckler Shield - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This stubborn buckler bears a segmented steel rim for easy repair. Its central basin is inscribed with Dunmeri oaths to the dead.
+                        <br><br>
+                        Where human knights prefer intricate, aristocratic raiments, the Order of Nerevar embraced a spartan ethos. Nevertheless, they individualized their equipment with memories of home.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_steel-shield-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Steel Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Standard Shield - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A steel ward armed with a rounded spike and dressed in strips of guar leather. Its simplicity belies the millennia of innovation cemented behind every bolt, groove, and plate that stands between you and your enemies.
+                        <br><br>
+                        Ostracized by the newly risen Tribunal, Nerevar's closest followers were forced into a fugitive existence. Regardless, they strove to leave works of nobility in their wake.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_steel-tower-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Steel Tower Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Tower Shield - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This tower shield transforms you into a veritable fortress standing against a hostile world. Wielding resilient steel and unbreakable will, the threats before you seem to diminish.
+                        <br><br>
+                        As the Tribunal's Ordinators claimed the loyalty of House Indoril and seized the image of Nerevar himself, his order of knights met with slow, irreversible decline. Though their armor is still used by many, few can even recall their name.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

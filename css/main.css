@@ -1,6 +1,7 @@
-/* General Styling */
+/* Global: General Styling */
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Avenir" !important;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     color: #2c2c2c;
 }
 
@@ -18,6 +19,20 @@ hr {
     border: 1px solid #D5D5D5;
 }
 
+button {
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    box-shadow: none !important;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .subheader {
     font-weight: bold;
 }
@@ -27,7 +42,12 @@ hr {
     flex-grow: 1;
 }
 
-/* Top Navbar */
+/* Global: Top Navbar */
+#nav-parent {
+    position: relative;
+    overflow: hidden;
+}
+
 .site-icon {
     height: 32px;
     width: auto;
@@ -39,54 +59,61 @@ hr {
 
 #navbar-image {
     position: absolute;
-    width: 100%;
-    height: 80px;
+    width: 104%;
+    left: -2%;
+    top: -4px;
+    height: 88px;
+    overflow: hidden;
     z-index: -1;
 
     background-image: url("../files/images/screenshots/skywind-shipwreck-dark.jpg");
-    background-size: 100%;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    background-size: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 
-#navbar {
-    /* position: absolute; */
+.nav {
     display: inline-flex;
     flex-wrap: nowrap;
     height: 80px;
-    width: 100%;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: 0px;
     z-index: 1;
+
+    overflow: hidden !important;
 }
 
-#navbar div {
+.nav div {
     position: relative;
     color: white;
     margin-right: 24px;
     font-size: 16px;
 }
 
-#navbar div a {
+.nav div a {
     color: white;
     text-decoration: none;
 }
 
-#navbar div a img {
+.nav div a img {
     height: 24px;
     width: auto;
+    vertical-align: middle;
 }
 
-#navbar div:first-child {
+.nav div:first-child {
     left: 16px;
     flex-grow: 1;
 }
 
-#navbar div:first-child span {
+.nav div:first-child span {
     color: white;
     margin-left: 40px;
 }
 
-#navbar div:first-child span b {
+.nav div:first-child span b {
     color: white;
 }
 
@@ -100,7 +127,40 @@ hr {
     justify-content: flex-end;
 }
 
-/* Name & Title Header */
+#navbar-collapse {
+    display: none;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: hidden;
+}
+
+#navbar-collapse .project-tab-hamburger {
+    margin: 0;
+}
+
+#navbar-collapse .project-tab-close {
+    margin: 0;
+}
+
+#navbar-collapse a img {
+    width: 24px;
+}
+
+.icons-collapse {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.icons-collapse img {
+    width: 24px;
+    vertical-align: middle;
+}
+
+/* Home Page: Name & Title Header */
 #name {
     padding-top: 40px;
     position: relative;
@@ -118,7 +178,7 @@ hr {
     margin-bottom: 16px;
 }
 
-/* Projects */
+/* Home Page: Projects */
 .homepage-hr {
     width: 60%;
 }
@@ -180,8 +240,43 @@ hr {
     width: 100%;
 }
 
+#skywind-card-text h3 {
+    padding-bottom: 8px;
+}
+
+/* Home Page: About Me */
+#about {
+    width: 60%;
+    padding-top: 16px;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#about-header h2 {
+    text-align: center;
+}
+
+#about-picture {
+    flex-grow: 1;
+    max-width: 40%;
+    align-self: center;
+}
+
+#about-picture img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#about-text {
+    flex-grow: 3;
+}
+
 /* Skywind Project Page */
 .responsive {
+    padding-top: 0 !important;
     flex-direction: column !important;
 }
 
@@ -206,17 +301,30 @@ hr {
 }
 
 .project-header-image {
+    width: 60%;
     display: flex;
     flex-grow: 2;
     flex-basis: auto;
     align-self: flex-start;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .project-header-image img {
     width: 100%;
     height: auto;
-    /* object-fit: scale-down; */
     align-self: flex-start;
+}
+
+.project-header-image button {
+    width: 100%;
+}
+
+.project-header-image button img {
+    width: 12px !important;
+    height: auto;
+    padding-right: 8px;
+    padding-left: 0;
 }
 
 .project-header-text {
@@ -267,7 +375,6 @@ hr {
     width: 24px;
     height: 24px;
     align-self: center;
-    /* filter: invert(0%) sepia(96%) saturate(14%) hue-rotate(11deg) brightness(93%) contrast(100%); */
 }
 
 /* Project Tabs */
@@ -275,6 +382,7 @@ hr {
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 40px;
     position: relative;
     display: inline-flex;
     flex-wrap: wrap;
@@ -293,7 +401,7 @@ hr {
 }
 
 .tab-selected a {
-    color: #FF7542;
+    color: #FF7542 !important;
 }
 
 .project-tabs-collapse {
@@ -321,6 +429,28 @@ hr {
 .project-tab-close {
     display: none;
     align-self: center;
+}
+
+#hamburger-nav-main {
+    position: relative;;
+}
+
+.hamburger-menu-main {
+    display: none;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 8px;
+    overflow: hidden;
+}
+
+.hamburger-menu-main a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: lighter;
+    vertical-align: middle;
 }
 
 #hamburger-nav {
@@ -351,20 +481,335 @@ hr {
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .content-selected {
     display: flex !important;
 }
 
-/* World Encounters */
+/* Page Content */
+.content-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
 
+.content-group p {
+    font-size: 14px;
+}
 
-/* Item Descriptions */
+.content-group img {
+    width: 100%;
+}
 
+.content-image {
+    flex-basis: 0;
+    flex-grow: 5;
+}
 
-/* Quests */
+.content-text {
+    flex-basis: 0;
+    flex-grow: 5;
+}
 
+.content-text h3 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.content-text p {
+    font-size: 16px;
+}
+
+.content-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.content-button-primary {
+    color: white;
+    background-color: #184655;
+    border-color: #184655;
+}
+
+.content-button-secondary {
+    color: #2C2C2C;
+    background-color: #E0E0E0;
+    border-color: #E0E0E0;
+}
+
+.content-button-secondary span {
+    vertical-align: middle;
+}
+
+.content-button-secondary img {
+    width: 12px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.content-rule {
+    display: block;
+}
+
+.content-rule hr {
+    border: 1px solid #f2f2f2;
+}
+
+/* Tab: World Encounters */
+#content-encounters {
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Tab: Item Descriptions */
+#content-items {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item-set-square {
+    position: relative;
+    max-width: 150px;
+    width: 150px !important;
+    height: 150px;
+    border: 2px solid white;
+    flex-grow: 1 !important;
+}
+
+.item-set-square img {
+    width: 100%;
+}
+
+.item-set-square p {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    margin: 0;
+
+    color: white;
+    font-family: 'Fondamento' !important;
+    text-shadow: -0.6px 0.6px 0 #545454,
+                          0.6px 0.6px 0 #545454,
+                          0.6px -0.6px 0 #545454,
+                        -0.6px -0.6px 0 #545454;
+                        /* 2f2f2f */
+    text-align: center;
+}
+
+/* Tab: Quests */
+#content-quests {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.quest-content {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 40px;
+}
+
+.quest-content img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+.quest-content h3 {
+    text-transform: uppercase;
+}
+
+#exiles-banner {
+    object-position: 0 70%;
+}
+
+.quest-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 12px;
+}
+
+.quest-title-buffer {
+    margin-top: 40px;
+}
+
+/* Tab: Other */
+#content-other {
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Subpage */
+.subpage-header {
+    padding-top: 24px;
+    position: relative;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.subpage-header h2 {
+    text-align: center;
+}
+
+.subpage-header hr {
+    width: 100%;
+}
+
+.subpage-header-text {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subpage-items-header-text div {
+    flex-grow: 1;
+    align-self: flex-end;
+}
+
+.subpage-header-title {
+    flex-grow: 2;
+}
+
+.subpage-header-side {
+    flex-grow: 1;
+    align-self: flex-end;
+    width: 20%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.subpage-header-side a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.subpage-header-side img {
+    width: 12px;
+    padding-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 4px;
+}
+
+.subpage-header-hidden {
+    display: none;
+}
+
+.subpage-header-buffer {
+    flex-grow: 1;
+    width: 20%;
+}
+
+.header-middle-buffer {
+    flex-grow: 3;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.header-right img {
+    padding-right: 0;
+    padding-left: 4px;
+}
+
+/* Page: Item Description Set */
+.items-content {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.items-content div {
+    flex-grow: 1;
+    /* width: 20%; */
+    text-align: center;
+    position: relative;
+    max-width: 300px;
+    width: 300px !important;
+    height: 300px;
+    border: 2px solid white;
+    flex-grow: 1 !important;
+}
+
+.items-content img {
+    width: 100% !important;
+    height: auto;
+    max-height: 100%;
+    object-fit: scale-down;
+}
+
+/* Modals */
+.modal-image:hover {
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal - Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    margin-top: 40px;
+    padding: 32px;
+    max-height: 75vh;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.modal-header h2 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.modal-body {
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
+/* Modal - Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* Media Query Breakpoints */
 @media screen and (max-width: 1080px) {
@@ -373,6 +818,7 @@ hr {
     }
     .responsive h2 {
         display: block;
+        text-align: center;
     }
     .responsive hr {
         display: block;
@@ -383,13 +829,34 @@ hr {
     .project-header-text hr {
         display: none;
     }
+    .content-group {
+        flex-direction: column;
+    }
+    .content-group img {
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #navbar {
+        display: none;
+    }
+    #navbar-collapse {
+        display: flex;
+    }
 }
 
 /* TODO - fix sizing below 500px width */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .project-header {
         flex-direction: column !important;
         flex-wrap: wrap !important;
+    }
+    .responsive {
+        padding-top: 40px;
     }
     .responsive h2 {
         width: 100%;
@@ -404,6 +871,10 @@ hr {
         width: 80% !important;
         padding-left: 10%;
     }
+    .project-header-image button {
+        width: 90%;
+        margin-left: 10%;
+    }
     .project-header-text {
         padding-left: 0 !important;
         width: 100% !important;
@@ -414,9 +885,88 @@ hr {
     .project-tabs-collapse {
         display: flex;
     }
+    .subpage-header-close {
+        width: 5%;
+    }
+    .subpage-header-close span {
+        display: none;
+    }
+    .subpage-header-buffer {
+        width: 5%;
+    }
+    .modal-content {
+        width: 70%;
+    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 759px) {
+    .items-content div {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .subpage-header-title {
+        width: 80%;
+    }
+    .subpage-header-text span {
+        display: none;
+    }
+    .subpage-header-side {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .subpage-header {
+        padding-top: 0;
+    }
+    .subpage-header h2 {
+        margin-top: 0;
+    }
+    .subpage-header .subpage-header-side {
+        display: none;
+    }
+    .subpage-header-hidden {
+        display: flex;
+        padding-top: 24px;
+    }
+    .subpage-header-hidden .subpage-header-side {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .modal-image {
+        width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #navbar-collapse span {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #skywind {
+        width: 50%;
+    }
+    .homepage-hr {
+        width: 50%;
+    }
+    .project-header-image {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #navbar-image {
+        height: 88px !important;
+    }
+    .hamburger-menu-main {
+        display: none !important;
+    }
     .hamburger-menu {
         display: none !important;
     }

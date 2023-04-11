@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Nordic Iron Armor
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="nord_iron-helm"
+                class="modal-image"
+                onclick="openItemModal('#nord_iron-helm-modal')"
+                src="../../files/images/item_images_text/nord_iron/nord_iron-helm.png">
+        </div>
+        <div>
+            <img 
+                id="nord_iron-cuirass"
+                class="modal-image"
+                onclick="openItemModal('#nord_iron-cuirass-modal')"
+                src="../../files/images/item_images_text/nord_iron/nord_iron-cuirass.png">
+        </div>
+        <div>
+            <img 
+                id="nord_iron-gauntlets"
+                class="modal-image"
+                onclick="openItemModal('#nord_iron-gauntlets-modal')"
+                src="../../files/images/item_images_text/nord_iron/nord_iron-gauntlets.png">
+        </div>
+        <div>
+            <img 
+                id="nord_iron-boots"
+                class="modal-image"
+                onclick="openItemModal('#nord_iron-boots-modal')"
+                src="../../files/images/item_images_text/nord_iron/nord_iron-boots.png">
+        </div>
+        <div>
+            <img 
+                id="nord_iron-pauldron"
+                class="modal-image"
+                onclick="openItemModal('#nord_iron-pauldron-modal')"
+                src="../../files/images/item_images_text/nord_iron/nord_iron-pauldrons.png">
+        </div>
+        <div>
+            <img 
+                id="nord_iron-greaves"
+                class="modal-image"
+                onclick="openItemModal('#nord_iron-greaves-modal')"
+                src="../../files/images/item_images_text/nord_iron/nord_iron-greaves.png">
+        </div>
+    </div>
+
+    <div id="nord_iron-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Nordic Iron Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Helm - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Curved ram horns and a glowering face adorn this helm of storm-dark iron. Its fearsome snow-wreathed visage inspired the Dunmer's epithet for invading Nords - "ice demons".
+                        <br><br>
+                        Sing of the landfall, O Kyne,
+                        <br>
+                        Shaper of Storms and Mother of Man.
+                        <br>
+                        Sing of those doom-driven souls from far-flung Atmora.
+                        <br>
+                        - Dragon-Poet Wuthfomiir, The Fragmented Ul-Tey, Song 1
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="nord_iron-cuirass-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Nordic Iron Cuirass</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Cuirass - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Only a powerful heart can bear the weight of this massy star-iron cuirass. Its necklace of wolf fangs and carved bronze talisman betray druidic influences.
+                        <br><br>
+                        In the frozen Elder Wood, the sun had ceased to move.
+                        <br>
+                        Sundered by war, banished from time,
+                        <br>
+                        Its children, the Atmorans, sought salvation in the sea.
+                        <br>
+                        - Dragon-Poet Wuthfomiir, The Fragmented Ul-Tey, Song 3
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="nord_iron-gauntlets-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Nordic Iron Gauntlets</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Gauntlets - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Gloves from the skin of Bear-guiser-Tsun clasped in spiked bracers the color of mountain stone. These gauntlets can parry a blade or knock the teeth out of a troll.
+                        <br><br>
+                        To Sky's Rim did Ysgramor lead his fleet.
+                        <br>
+                        And when first he beheld the far land's blazing sun,
+                        <br>
+                        His joyful tears fell as wild waves upon the shore.
+                        <br>
+                        - Dragon-Poet Wuthfomiir, The Fragmented Ul-Tey, Song 4
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="nord_iron-boots-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Nordic Iron Boots</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Boots - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        These spiked iron boots are as useful for shattering solid mountain ice as they are for executing downed opponents. In the heat of battle, Nord berserkers are feared most not for their brawn or bravery, but for their lack of mercy.
+                        <br><br>
+                        On Tearful Night fell elves with whetted ice.
+                        <br>
+                        By root and stem they rended Sons of Kyne,
+                        <br>
+                        But in bloodied hearts bloomed hateful embers.
+                        <br>
+                        - Dragon-Poet Wuthfomiir, The Fragmented Ul-Tey, Song 6
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="nord_iron-pauldron-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Nordic Iron Pauldrons</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldrons - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        An elk-fur cloak thick enough to repel Skyrim's deadly blizzards and vicious ice wraiths. Its knotted and tangled cords ripple, as though moved by the cutting winds that precede a storm.
+                        <br><br>
+                        In sunless abyss of deepest winter,
+                        <br>
+                        Ysgramor's Companions set the land ablaze.
+                        <br>
+                        Vengeance fed hungry flames in once-noble breasts.
+                        <br>
+                        - Dragon-Poet Wuthfomiir, The Fragmented Ul-Tey, Song 9
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="nord_iron-greaves-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Nordic Iron Greaves</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Greaves - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        These plate and mail greaves turn your stride into a rumbling, unrelenting wind. Over years of brutal raids, Vvardenfell's people have come to understand that distant marching thunder precedes a torrent of blood, iron, and northern madmen.
+                        <br><br>
+                        On far horizons did fledgling Man seek peace.
+                        <br>
+                        Yet, reborn, they painted scarlet the Sky's Rim,
+                        <br>
+                        And all Tamriel trembled at the war-wrought desolation.
+                        <br>
+                        - Dragon-Poet Wuthfomiir, The Fragmented Ul-Tey, Song 10
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

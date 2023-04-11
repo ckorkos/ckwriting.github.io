@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Imperial Newtscale Armor
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="newt-helm"
+                class="modal-image"
+                onclick="openItemModal('#newt-helm-modal')"
+                src="../../files/images/item_images_text/imp_newtscale/imp_newtscale-helm.png">
+        </div>
+        <div>
+            <img 
+                id="newt-cuirass"
+                class="modal-image"
+                onclick="openItemModal('#newt-cuirass-modal')"
+                src="../../files/images/item_images_text/imp_newtscale/imp_newtscale-cuirass.png">
+        </div>
+        <div>
+            <img 
+                id="newt-gauntlets"
+                class="modal-image"
+                onclick="openItemModal('#newt-gauntlets-modal')"
+                src="../../files/images/item_images_text/imp_newtscale/imp_newtscale-gauntlets.png">
+        </div>
+        <div>
+            <img 
+                id="newt-boots"
+                class="modal-image"
+                onclick="openItemModal('#newt-boots-modal')"
+                src="../../files/images/item_images_text/imp_newtscale/imp_newtscale-boots.png">
+        </div>
+        <div>
+            <img 
+                id="newt-pauldron"
+                class="modal-image"
+                onclick="openItemModal('#newt-pauldron-modal')"
+                src="../../files/images/item_images_text/imp_newtscale/imp_newtscale-pauldrons.png">
+        </div>
+        <div>
+            <img 
+                id="newt-greaves"
+                class="modal-image"
+                onclick="openItemModal('#newt-greaves-modal')"
+                src="../../files/images/item_images_text/imp_newtscale/imp_newtscale-greaves.png">
+        </div>
+        <div>
+            <img 
+                id="newt-buckler"
+                class="modal-image"
+                onclick="openItemModal('#newt-buckler-modal')"
+                src="../../files/images/item_images_text/imp_newtscale/imp_newtscale-buckler.png">
+        </div>
+        <div>
+            <img 
+                id="newt-shield"
+                class="modal-image"
+                onclick="openItemModal('#newt-shield-modal')"
+                src="../../files/images/item_images_text/imp_newtscale/imp_newtscale-shield.png">
+        </div>
+        <div>
+            <img 
+                id="newt-tower"
+                class="modal-image"
+                onclick="openItemModal('#newt-tower-modal')"
+                src="../../files/images/item_images_text/imp_newtscale/imp_newtscale-tower.png">
+        </div>
+    </div>
+
+    <div id="newt-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Newtscale Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Helm - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A helm of sinuous wrought steel and organic riverdragon scales. The hide's metamorphic properties retain some traces of the magics used to alter one's flesh.
+                        <br><br>
+                        In the long years of war to reunite his homeland, Reman Cyrodiil foresaw the end of humanity. Looking beyond mere preservation, he sought to catalyze the transformation of his people.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="newt-cuirass-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Newtscale Cuirass</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Cuirass - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Golden scales guard a tunic of dark river-cloth. Both exhibit an Akaviri influence, but neither betrays the covert allegiance which it once bore.
+                        <br><br>
+                        The Human-Tsaesci Gloom Legion was deployed as early as the Second Empire, when Reman pacified the unruly warlords of Skyrim and High Rock with rings of the shapeshifting nightblades.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="newt-gauntlets-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Newtscale Gauntlets</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Gauntlets - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        There is still some semblance of life in the newtskin that wraps these leather gloves, worn as they are from years of bearing weaponry.
+                        <br><br>
+                        Like the river newts who surrendered the golden skin, the Gloom learned to sense their prey in darkness and to strike unseen. In wartime, such assassinations often prevented more widescale destruction.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="newt-boots-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Newtscale Boots</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Boots - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Boots that glisten with the golden skin of the elusive newts which lurk beneath the Niben's placid surface. These deadly creatures have cut short the ambitions of many adventurers.
+                        <br><br>
+                        Through irreversible flesh rites, the Gloom adapted their bodies to the ash of Vvardenfell, the dunes of the Alik'r, and even the deep sea. Those who transformed, however, never returned to their temperate homeland.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="newt-pauldron-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Newtscale Pauldrons</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldrons - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        These flexible deerhide pauldrons depict ancestor moths - Cyrodilic symbols of both ancient wisdom and profound metamorphosis.
+                        <br><br>
+                        The bygone Tsaesci and their human followers failed in the profane rituals to become dragons. The survivors, however, bore membranes of scale and mucus which granted immunity to fire, among a host of illusion-enhancing mutations.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="newt-greaves-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Newtscale Greaves</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Greaves - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        These slacks of dark river-cloth are light and comfortable, yet seem unbothered by the bitter elements. Years of travel have woven soil, sand, and ash into their fibers.
+                        <br><br>
+                        The Gloom traveled alone in unmarked armor. Reman leveraged the confusion raised by their strikes to sow distrust between rival territories.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="newt-buckler-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Newtscale Buckler Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Buckler Shield - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A buckler formed by the flecked skin of a newt stretched over a light steel frame. Beyond the Nibenese influences, few remember its designers.
+                        <br><br>
+                        It is said that when newts failed to become dragons, they were driven from the land as abominations. In spite of their unique strengths, they were forced to find solace in the shadows of the world.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="newt-shield-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Newtscale Standard Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Standard Shield - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        An arching shield of golden scales, preferred in the current age by pirates of the Topal Bay for its lightness and performance underwater. Submerged, it ripples with opalescent light.
+                        <br><br>
+                        Emboldened by flin and brandy, sailors in Vivec may speak of dim, antique spires standing resolutely within the unfathomable sea, and of the rainbow glints which flit between them.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="newt-tower-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Newtscale Tower Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Tower Shield - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This leaflike steel frame houses layers of delicate, reflective scales. Individually, each may cave to a sword or spear, but reinforced by their neighbors they construct a formidable defensive line.
+                        <br><br>
+                        During the collapse of the Reman Dynasty, brutal purges drove many of the Emperor's once ardent assassins into hiding. Rumors allege that a final contingent departed Tamriel, seeking to join a distant kin.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('quests')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="subpage-header-title"></div>
+
+            <div class="subpage-header-side"></div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('quests')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Threads of the Webspinner
+                </h2>
+            </div>
+
+            <div class="subpage-header-side"></div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="quest-content">
+        <div>
+            <img src="../../files/images/art/assassin-2D.jpg" alt="Webspinner Banner"/>
+        </div>
+
+        <div>
+            <h3>
+                Quest Overview
+            </h3>
+            <p>
+                In <i>Threads of the Webspinner</i>, the player hunts a set of items said to have been crafted by the demon lords Mephala and Sanguine. These artifacts are highly prized by Morrowind's cult of assassins - the Morag Tong. This quest is part of the Morag Tong faction, and requires that the player has joined and advanced through the guild.
+                <br><br>
+                I worked with a group of <i>Skywind</i> members to write an outline of the story told through the item descriptions on this set. To convey the Shakespearean themes of secrecy, murder, and betrayal - all of which are embraced by the artifacts' creators - another writer translated this outline into iambic pentameter prose.
+                <br><br>
+                <b>
+                    The item descriptions and other documents are currently in progress, but the story that each of these will follow can be seen below.
+                </b>
+            </p>
+        </div>
+
+        <div class="quest-buttons">
+            <div>
+                <a href="../../files/documents/quests/webspinner/webspinner.pdf" target="_blank">
+                    <button class="content-button-primary">
+                        Plot Points by Item
+                    </button>
+                </a>
+            </div>
+            <!-- <div>
+                <a href="" target="_blank">
+                    <button class="content-button-secondary">
+                        Item Descriptions (in progress)
+                    </button>
+                </a>
+            </div> -->
+            <div>
+                <a href="../../files/documents/quests/webspinner/webspinner-notes.pdf" target="_blank">
+                    <button class="content-button-secondary">
+                        Lore Notes & Synopsis
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <h3>
+                Part One: Disillusionment
+            </h3>
+            <p>
+                Alvan was a noble of the House Ettutuipal, a clan of forest hunters who nestled their home between the arching fungal forests of Deshaan and the deep wildwood swamps of Shadowfen.
+            </p>
+            <p>
+                They worshiped the god Mephala, who moved always in things between – among the shadows behind the fungus stalks and beyond the mists over the mire.
+            </p>
+            <p>
+                In those days Alvan’s revelries were subdued, pacified, beholden to a force that cared not for the joy of its subjects. The chants and offerings were dour, lacking in the honor and resplendence that the Chimer had abandoned at the threshold of Resdayn.
+            </p>
+            <p>
+                Alvan’s grandfather, the Archhunter, recognized his antipathy, and so great was his own zeal that he severed Alvan from his right of inheritance. He would never take leadership of the home that had raised him, had forced him through such miserable trials with a false promise of reward.
+            </p>
+            <p>
+                What had begun as monotony turned to hate. He cursed the name of his family and their god, swearing revenge for the stolen birthright.
+            </p>
+            <p>
+                Desiring passion, purpose, and strength, Alvan stole from the accursed House and made for the wider world – seeking a master who could grant him the power he deserved.
+            </p>
+
+            <h3>
+                Part Two: Search
+            </h3>
+            <p>
+                Taken fully by a desire for revenge, Alvan sought counsel with Boethiah – the Prince of Plots and Queen of Shadows, whose sphere is that of unlawful and murderous conspiracy. But he was rejected, for the Daedra would not plot against her own sister and fellow guide of the Chimer.
+            </p>
+            <p>
+                Next, he turned to the House of Troubles – seeking out the secluded followers of Mehrunes Dagon, whose sphere is that of forceful revolution and justified change. But Alvan was again rejected, for the Lord of Fire and Flood ruled that his cause was weak and impure.
+            </p>
+            <p>
+                It was then that Azura spoke, offering guidance and protection, commanding the young Chimer to turn away from his destructive ambitions. The Moonshadow warned that this path led into shadow, and ahead his threads of fate frayed into many disparate strands. To Alvan, her mercy was condescension and weakness, and in his anger he cursed her name.
+            </p>
+            <p>
+                Lost and desperate, Alvan found shelter at an inn outside Necrom. The weather-beaten shack, half sunk in the muddy plains, stood defiantly against the wind and rain of the Padomaic Ocean.
+            </p>
+            <p>
+                Within the inn, a Nede traveler hailed the noble. The grinning human claimed to know of a powerful sorcerer – a master versed in magic far beyond that of Alvan’s kin. With a jovial lifting of his flagon, he challenged Alvan to drink for the information.
+            </p>
+            <p>
+                They drank first in competition, then in revelry. They lost track of the count, but continued regardless. The human drink was bitter and strong, and with each swig Alvan’s willpower faded. Soon he descended into darkness, feeling something far stronger than the liquor take hold of his mind.
+            </p>
+
+            <h3>
+                Part Three: Revelry
+            </h3>
+            <p>
+                Alvan awoke in a nocturnal wood, strung with lanterns and enclosed by a clear night sky. Before the noble was a grand feast in his name, attended by all manner of demonic imps, sprites, and fiends. Its host was a grinning shadow with eyes of flame. The shadow offered Alvan a cup, promising the ecstasy of revenge and joy of eternal revelry in exchange for service to Lord Sanguine. He drank deeply.
+            </p>
+            <p>
+                The celebrants adorned Alvan with extravagant finery – glittering gems, belts of rare hide, filigreed clothing of dark silk. The little demons bound them tightly to him, and as they did so a strange magic poured into his being.
+            </p>
+            <p>
+                The nights wove into a vague tapestry of ecstatic merriment and drunken revelation. Orgies beneath the ruined moonstone cathedrals of metaphorical Aldmeris. Savage, psychedelic jousts along the luminous shores of Lyg, upon which spilled blood bloomed as roses. Feasts across a thousand realms of pleasure, whose guests were those lucky – or unlucky – enough to have been beckoned by the Lord of Revelry.
+            </p>
+            <p>
+                With each night, Alvan’s adornments grew in number, and as they did his memories of home faded. The person his family had crafted within him died, to be replaced by strength, revelation, and the will of his new master. Try as he might, Alvan could not remove the pieces – but he did not care. With each new article, his status in the eyes of Sanguine heightened and his power grew ever greater. In time, he was to become Prince of his own house within Sanguine’s Thousand Realms.
+            </p>
+            <p>
+                Alvan had grown bestial, relishing the mirthful violence and ravenous lust that fueled the servants of these realms. Each blurred night removed a piece of that being that he had once known, replacing it with another fine garment of silk or rubied amulet.
+            </p>
+            <p>
+                When his euphoria reached its zenith, the flame-eyed shadow appeared once more. Grinning, the shadow offered a rose that became a blade in Alvan’s hand. It stripped Alvan’s name, blessing him anew as Tear’mora. Wordlessly, the shadow commanded its servant to go once more into the mortal world and claim his stolen birthright.
+            </p>
+
+            <h3>
+                Part Four: Betrayal
+            </h3>
+            <p>
+                Tear’mora strode proudly upon the House of Ettutuipal – clan of his ancestors, his by rights. His former grandfather, the Archhunter, watched Tear’mora with disdain from the ashwood throne. The rest of his former family moved to stop him, and with the power granted by Sanguine’s garments, he parried and sidestepped their strikes. They closed in, and Tear’mora became shadow, drifting through the horde and to the throne.
+            </p>
+            <p>
+                With a single brush of the rose-knife, the young Chimer cut through every ward and blessing and bone plate cocooning his gray patriarch. The old man slumped without a word, bearing a necklace of sanguine.
+            </p>
+            <p>
+                Tear’mora turned to his former family, who had fallen silent and still, and claimed the House of Ettutuipal for Sanguine. No longer would they be bound by the threads of the Webspinner, and no longer would their days be filled with the drudgery and dishonor of their false god.
+            </p>
+            <p>
+                The family dropped their weapons, moving forward with extended hands of worship. They caressed Tear’mora lovingly, as they would a god among the living, and the young Chimer felt his heart rise. Then, all at once, they seized the garments fastened to him and pulled. Each came unbound in an instant - twenty-seven pieces for twenty-seven relatives - and transformed into silver threads. The rose-knife fell from his grasp and wilted on the floor. Bound by the silken prison, Tear’mora could only watch as thousand-armed Mephala emerged from darkness, resting a slender hand on each of the family that surrounded him.
+            </p>
+            <p>
+                With a flash of her many disembodied eyes, the Webspinner told all. That the naive young Chimer had been her instrument from the start. That Sanguine’s revelries had merely guided him toward the final snare. And that, in the end, he had served as mere amusement for incomprehensibly greater beings.
+            </p>
+            <p>
+                The family closed in, drawing woeful blades. Behind them lurked a shadow unlike the rest – a flame-eyed shadow, grinning with white fangs. As the blades descended, Tear’mora released a merry laugh.
+            </p>
+            <p>
+                It was then that Mephala and Sanguine crafted new creations for the loyal House Ettutuipal. Soft finery threaded of golden hair, white amulets of bone, rubies of crystalline blood, diamonds of wide, frozen eyes.
+            </p>
+            <p>
+                With murder and revelry united, her followers took hold of the threads that tugged at fate itself. They abandoned their name, took the mantle of “Forester’s Guild”, and the house descended into the waters of Oblivion.
+            </p>
+
+            <h3>
+                Epilogue
+            </h3>
+            <p>
+                In my dreams, I run among lantern-lit trees alongside cackling imps, through feasts of succulent meat and sweet, strong wine. I battle in a blood-frenzy beneath alien stars and give myself, body and soul, to a thousand undying pleasures.
+            </p>
+            <p>
+                But my dreams are vague. My soul, aching for unity, can no longer taste the feast nor feel the quickened blood. My shards are forever left to wander through the fog of dream as twenty-seven.
+            </p>
+
+        </div>
+    </div>
+
+</body>
+</html>

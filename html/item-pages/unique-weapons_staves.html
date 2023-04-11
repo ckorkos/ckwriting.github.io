@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Unique Weapons & Staves
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="staff-of-magnus"
+                class="modal-image"
+                onclick="openItemModal('#staff-of-magnus-modal')"
+                src="../../files/images/item_images_text/unique-weapons_staves/weapon-staff_magnus.png">
+        </div>
+        <div>
+            <img 
+                id="veloth-judgement"
+                class="modal-image"
+                onclick="openItemModal('#veloth-judgement-modal')"
+                src="../../files/images/item_images_text/unique-weapons_staves/weapon-veloth.png">
+        </div>
+        <div>
+            <img 
+                id="wind-of-ahaz"
+                class="modal-image"
+                onclick="openItemModal('#wind-of-ahaz-modal')"
+                src="../../files/images/item_images_text/unique-weapons_staves/weapon-ahaz.png">
+        </div>
+        <div>
+            <img 
+                id="fury"
+                class="modal-image"
+                onclick="openItemModal('#fury-modal')"
+                src="../../files/images/item_images_text/unique-weapons_staves/weapon-fury.png">
+        </div>
+        <div>
+            <img 
+                id="sanguine-bow"
+                class="modal-image"
+                onclick="openItemModal('#sanguine-bow-modal')"
+                src="../../files/images/item_images_text/unique-weapons_staves/weapon-sanguine_bow.png">
+        </div>
+        <div>
+            <img 
+                id="black-hands"
+                class="modal-image"
+                onclick="openItemModal('#black-hands-modal')"
+                src="../../files/images/item_images_text/unique-weapons_staves/weapon-black_hands.png">
+        </div>
+        <div>
+            <img 
+                id="soul-drinker"
+                class="modal-image"
+                onclick="openItemModal('#soul-drinker-modal')"
+                src="../../files/images/item_images_text/unique-weapons_staves/weapon-soul_drinker.png">
+        </div>
+        <div>
+            <img 
+                id="umbra"
+                class="modal-image"
+                onclick="openItemModal('#umbra-modal')"
+                src="../../files/images/item_images_text/unique-weapons_staves/weapon-umbra.png">
+        </div>
+    </div>
+
+    <div id="staff-of-magnus-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Staff of Magnus</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Unique Staff
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Passive resistance to magic and faster magicka regeneration.
+                    </li>
+                    <li>
+                        All spells are more powerful, at the cost of more magic to cast them.
+                    </li>
+                    <li>
+                        Concentrate to absorb incoming spells. Absorbed spells increase the power of your own spells.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The moment your fingers meet the luminous alloy of this staff, a surge of energy electrifies every cell of your being. Algorithmic patterns bloom from the solid matter around you, revealing the metaphysical gears of the apparatus that moves the universe. You begin to understand how it may move to your will.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        This is a powerful mythical tool, said to have been wielded by the architect of the universe.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="veloth-judgement-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Veloth's Judgement</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Daedric Warhammer
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Fire Damage
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This hammer's Daedric heat demands great discipline to wield. Its primeval flame pulses as a drumbeat within you, pressing you forward through fire and war.
+                        <br><br>
+                        Eons ago, the weapon was cast aside in a vow of peace.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        This hammer was carried by Saint Veloth during his great exodus from Summerset. The Daedric weapon shone as a symbol of his people's heretical beliefs, and fiercely guarded their pilgrimage to what is now Morrowind.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="wind-of-ahaz-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Wind of Ahaz</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Chitin War Axe
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Chameleon on Self
+                    </li>
+                    <li>
+                        Blind Enemies on Attack
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        When Ahaz was ordered to execute a captured Ashlander family, he instead slew his Captain and fellow Ordinators before deserting the Temple.<br><br>
+                        The axe that had severed him from his old life would claim many more who threatened the Erabenimsun Tribe, as he would forever be bound to them by blood.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Carried by Ahaz, a Champion of the Erabenimsun Ashlander tribe and fierce protector of its Ashkhan.
+                        <br><br>
+                        Even among Ashlanders, the Erabenimsun are known for their insularity and rigid warrior culture. While the other clans require proof before pledging their loyalty to the player as the uniter of Vvardenfell, the Erabenimsun will not bend so easily.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="fury-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Fury</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Silver Claymore
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Fortify Attack (Self)
+                    </li>
+                    <li>
+                        Blind (Self)
+                    </li>
+                    <li>
+                        Drain Heavy Armor (Self)
+                    </li>
+                    <li>
+                        Drain Medium Armor (Self)
+                    </li>
+                    <li>
+                        Drain Light Armor (Self)
+                    </li>
+                    <li>
+                        Drain Unarmored (Self)
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        As you grip the blistering silver of this greatblade, a bestial blood-memory awakens and a vertiginous pounding deafens your ears. It is neither pain nor panic that you feel. It's rage.
+                        <br><br>
+                        A nameless wanderer, said to be more wolf than man, once carved through Morrowind's tyrants with the strength of his burning hate. A lingering ember of his spirit now blazes within you.
+                    </li>
+                </ul>
+
+                <!-- <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="sanguine-bow-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Shortbow of Sanguine Sureflight</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Shortbow
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Fortify Marksman
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        In the nightly revelries of the Thousand Realms, it is said that the Lord of Pleasure hosts deadly challenges featuring the void-mirror of this demonic bow. But whether the loosed arrow pierces apple or skull, its flight is sure to bring a sanguine thrill.
+                    </li>
+                </ul>
+
+                <!-- <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="black-hands-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Black Hands Dagger</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Daedric Dagger
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Absorb Health on Strike
+                    </li>
+                    <li>
+                        Blind on Strike
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A thousand hands spin the web, but yours alone may slit life's thread.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Received from Eno Hlaalu, leader of the Morag Tong guild of assassins.
+                        <br><br>
+                        The Morag Tong worship the Daedric Lord Mephala, also called the Black Hands. Her web entangles all, though she requires earthly blades to end the hunt.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="soul-drinker-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Soul Drinker</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Daedric Dagger
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Soul Trap on Strike
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The Waters of Oblivion embrace all who are slain by this blade, yet only those born of the black waves can hope to reform their essence and escape them once more.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Received as part of the Mages Guild questline.
+                        <br><br>
+                        While the Mages Guild is loyal primarily to the Empire and its Divines, some who study its Conjuration practices delve into the depths of Oblivion.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="umbra-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Umbra</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Unique Sword
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Soul Trap on Strike
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The obsidian alloy of this blade is like ice to the touch, seeming to consume your own warmth for strength. A furtive and indistinct whispering slithers from within - unfortunate victims, or enduring fragments of its architect?
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        This blade is well known across the Elder Scrolls series. In <i>Morrowind</i>, it is wielded by an Orcish warrior with a dark and maddened death drive.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

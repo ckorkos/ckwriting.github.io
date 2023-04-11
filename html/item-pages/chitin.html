@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Chitin Armor
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="chitin-helm"
+                class="modal-image"
+                onclick="openItemModal('#chitin-helm-modal')"
+                src="../../files/images/item_images_text/chitin/chitin-helm.png">
+        </div>
+        <div>
+            <img 
+                id="chitin-cuirass"
+                class="modal-image"
+                onclick="openItemModal('#chitin-cuirass-modal')"
+                src="../../files/images/item_images_text/chitin/chitin-cuirass.png">
+        </div>
+        <div>
+            <img 
+                id="chitin-gauntlets"
+                class="modal-image"
+                onclick="openItemModal('#chitin-gauntlets-modal')"
+                src="../../files/images/item_images_text/chitin/chitin-gauntlets.png">
+        </div>
+        <div>
+            <img 
+                id="chitin-boots"
+                class="modal-image"
+                onclick="openItemModal('#chitin-boots-modal')"
+                src="../../files/images/item_images_text/chitin/chitin-boots.png">
+        </div>
+        <div>
+            <img 
+                id="chitin-pauldrons"
+                class="modal-image"
+                onclick="openItemModal('#chitin-pauldrons-modal')"
+                src="../../files/images/item_images_text/chitin/chitin-pauldrons.png">
+        </div>
+        <div>
+            <img 
+                id="chitin-greaves"
+                class="modal-image"
+                onclick="openItemModal('#chitin-greaves-modal')"
+                src="../../files/images/item_images_text/chitin/chitin-greaves.png">
+        </div>
+        <div>
+            <img 
+                id="chitin-buckler"
+                class="modal-image"
+                onclick="openItemModal('#chitin-buckler-modal')"
+                src="../../files/images/item_images_text/chitin/chitin-buckler.png">
+        </div>
+        <div>
+            <img 
+                id="chitin-shield"
+                class="modal-image"
+                onclick="openItemModal('#chitin-shield-modal')"
+                src="../../files/images/item_images_text/chitin/chitin-shield.png">
+        </div>
+        <div>
+            <img 
+                id="chitin-tower"
+                class="modal-image"
+                onclick="openItemModal('#chitin-tower-modal')"
+                src="../../files/images/item_images_text/chitin/chitin-tower.png">
+        </div>
+    </div>
+
+    <div id="chitin-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Chitin Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Helm - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Two opalescent crystal lenses shine from a hideously oblong and alien head. In the coiling tempest of an ash storm, these lambent eyes are the final features hidden by the tide of shadow and dust.
+                        <br><br>
+                        Disillusioned by the House Dunmer's oath to the Tribunal and abandonment of the Daedra, the Ashlanders pledged themselves to the wild, untainted wastes of Vvardenfell.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="chitin-cuirass-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Chitin Cuirass</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Cuirass - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This interwoven chitin exoskeleton flexes easily as you move, as if studying your form. A soft inner membrane clings tightly to your torso, dulling the armor's coarse arthropod ribs.
+                        <br><br>
+                        Beneath the ashen wastes of Vvardenfell lie the nameless remains of civilizations from time immemorial, their occupants forever cocooned by featureless basalt.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="chitin-gauntlets-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Chitin Gauntlets</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Gauntlets - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Fully enclosed chitin gauntlets ending in clawed fingers. Their sharpened tips are a last resort in combat, and a tribute to the Daedra who both guide and challenge the nomadic Ashlanders.
+                        <br><br>
+                        Unlike those who follow the Tribunal, Ashlanders do not fear Daedra belonging to the House of Troubles - rather, they are viewed as trialgivers marking the Dunmers' path to enlightenment.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="chitin-boots-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Chitin Boots</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Boots - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Open-back chitin boots which easily shrug off ashen winds and scorching heat, and moderately repel physical weapons. Ideal for the itinerant life to which Ashlanders are consigned.
+                        <br><br>
+                        Tucked into the volcanic desert's sparse and rocky alcoves, the fluttering guarhide and bonemold supports of Ashlander campsites signify a life that few would choose willingly.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="chitin-pauldrons-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Chitin Pauldrons</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldron - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Pauldrons formed by sharply-angled chitin plates, harvested from native fire shalk beetles and stacked over one another to symbolize the ancient burden of Dunmer ancestry.
+                        <br><br>
+                        Saint Veloth loathed his languishing homeland of Summerset, and so led his people to tumultuous Resdayn. Only through overwhelming adversity could radical transformation be achieved.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="chitin-greaves-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Chitin Greaves</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Greaves - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Overlapping chitin strapped atop slacks of insulating blight-moth wool. Their corrugated ribs flow evenly with the rest of the armor, transforming you into an insectoid warrior.
+                        <br><br>
+                        Though they rarely attack defenseless outsiders, Ashlanders seek to preserve their isolation through a furtive and vigilant secrecy.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="chitin-buckler-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Chitin Buckler Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Buckler Shield - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Plates of chitin sealed by shalk beetle resin form this small parrying shield. Owing to its lower weight and easy handling, it flows like an organic extension of your arm.
+                        <br><br>
+                        Ashlander elders speak of ancient Chimer warriors who grafted chitin onto themselves to replace limbs or organs, seeking to transcend their carnal prisons.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="chitin-shield-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Chitin Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Standard Shield - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A singular plate of chitin, cut and reshaped to resemble the fossilized crustaceans that once roamed Vvardenfell's surrounding seabed.
+                        <br><br>
+                        The geographic isolation of the island, particularly its inner wastes, has fostered flora and fauna which instill an eldritch fear in even the boldest of Outlanders.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="chitin-tower-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Chitin Tower Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Tower Shield - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Few Ashlanders use heavy equipment, but when threatened some will employ this massive shield to defend themselves and their comrades.
+                        <br><br>
+                        I will not pray for that which I've lost
+                        <br>
+                        When my heart springs forth
+                        <br>
+                        From your soil, like a seed,
+                        <br>
+                        And blossoms anew beneath tomorrow's sun.
+                        <br>
+                        - Words of the Wind
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

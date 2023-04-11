@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <a href="https://youtu.be/7_Bm0mtUFVE?t=57" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Dunmer Glass Armor
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <a href="https://youtu.be/7_Bm0mtUFVE?t=57" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="dun_glass-helm"
+                class="modal-image"
+                onclick="openItemModal('#dun_glass-helm-modal')"
+                src="../../files/images/item_images_text/dun_glass/dun_glass-helm.png">
+        </div>
+        <div>
+            <img 
+                id="dun_glass-cuirass"
+                class="modal-image"
+                onclick="openItemModal('#dun_glass-cuirass-modal')"
+                src="../../files/images/item_images_text/dun_glass/dun_glass-cuirass.png">
+        </div>
+        <div>
+            <img 
+                id="dun_glass-gauntlets"
+                class="modal-image"
+                onclick="openItemModal('#dun_glass-gauntlets-modal')"
+                src="../../files/images/item_images_text/dun_glass/dun_glass-gauntlets.png">
+        </div>
+        <div>
+            <img 
+                id="dun_glass-boots"
+                class="modal-image"
+                onclick="openItemModal('#dun_glass-boots-modal')"
+                src="../../files/images/item_images_text/dun_glass/dun_glass-boots.png">
+        </div>
+        <div>
+            <img 
+                id="dun_glass-pauldrons"
+                class="modal-image"
+                onclick="openItemModal('#dun_glass-pauldrons-modal')"
+                src="../../files/images/item_images_text/dun_glass/dun_glass-pauldrons.png">
+        </div>
+        <div>
+            <img 
+                id="dun_glass-greaves"
+                class="modal-image"
+                onclick="openItemModal('#dun_glass-greaves-modal')"
+                src="../../files/images/item_images_text/dun_glass/dun_glass-greaves.png">
+        </div>
+        <div>
+            <img 
+                id="dun_glass-buckler"
+                class="modal-image"
+                onclick="openItemModal('#dun_glass-buckler-modal')"
+                src="../../files/images/item_images_text/dun_glass/dun_glass-buckler.png">
+        </div>
+        <div>
+            <img 
+                id="dun_glass-shield"
+                class="modal-image"
+                onclick="openItemModal('#dun_glass-shield-modal')"
+                src="../../files/images/item_images_text/dun_glass/dun_glass-shield.png">
+        </div>
+        <div>
+            <img 
+                id="dun_glass-tower"
+                class="modal-image"
+                onclick="openItemModal('#dun_glass-tower-modal')"
+                src="../../files/images/item_images_text/dun_glass/dun_glass-tower.png">
+        </div>
+    </div>
+
+    <div id="dun_glass-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Glass Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Helm - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A dome of transparent malachite composite, reinforced against errant ashstorms by moonstone inlays. This helm is a bastardized form of those used by the Aldmer who first breached Aetherius.
+                        <br><br>
+                        When the Aldmeri Sun Birds perceived the primordial sea of energy beyond the sun and stars, they trembled with mania at a truth unknown to those on Mundus below.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_glass-cuirass-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Glass Cuirass</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Cuirass - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A cuirass of glimmering volcanic glass, modified for Vvardenfell's heat with wraps of willow anther linen. Those who lack knowledge of advanced smithing often believe the armor is a work of the divines.
+                        <br><br>
+                        It is not known whether early gods possessed anthropomorphic forms or took shapes exceeding mortal comprehension. Mer, who claim ancestry with them, tend to believe the former.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_glass-gauntlets-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Glass Gauntlets</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Gauntlets - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Gauntlets crafted using an ancient Aldmer technique, but incorporating the organic designs preferred by Dunmer. Their viridescent plating shines with the light of Aetherius' fallen fragments.
+                        <br><br>
+                        Rare individuals are born with the innate ability to perceive past and future in the stars, tracing a finger across the firmament to gaze through Time.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_glass-boots-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Glass Boots</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Boots - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Factious cells of malachite fastened over boots by strider silk wraps. Despite the elegant materials, the boots are hardened by the land in which they were made.
+                        <br><br>
+                        Among Saint Veloth's procession was master smith Anrahu the Keen, who knew the secrets of Aldmeri forging. Though retaining vestiges of her decadent forebears' designs, her armor saw changes that mirrored those of her people.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_glass-pauldrons-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Glass Pauldrons</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldrons - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Pauldrons of volcanic glass, flared outward to symbolize wings in flight. Their coruscant surface brings to mind the legend of Auri-El, an avian god from the War of the Dawn who clad himself in starlight.
+                        <br><br>
+                        It is said that when the Aedra departed Tamriel to cement themselves in the sky, Auri-El fired the immortal heart of his fallen adversary into the eastern sea.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_glass-greaves-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Glass Greaves</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Greaves - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Gleaming emerald greaves that wrap your legs like brilliant scales. Often found hidden beneath the flowing robes of elven war sorcerers.
+                        <br><br>
+                        The Chimer sages who guided the great pilgrimage into the East are said to have illuminated their path with the quivering light which flows through the core of all things.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_glass-buckler-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Glass Buckler Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Buckler Shield - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A light malachite shield patterned with ramifying tree roots, bisected by interwoven vines, and brandishing a crescent moon at its heart.
+                        <br><br>
+                        To the Dunmer, Nirn's moons symbolize the sacred twilight, a time of mystery, poetry, and lust.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_glass-shield-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Glass Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Standard Shield - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This shield of pure malachite is forged into the delicately curving form of an eye. Within its iris, a subdividing circle depicts a pale flower.
+                        <br><br>
+                        A mad, nameless prophet of the Ashlands once spoke of mortals as fractal - describing each soul as a falling petal plucked from a single amaranth flower.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dun_glass-tower-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Dunmer Glass Tower Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Tower Shield - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The grandiose form of this shield invokes the prismatic spires bejeweling the land from which the glassworking techniques were stolen.
+                        <br><br>
+                        Over millennia, Summerset's isolationism has seeded rumors of an impossibly beautiful and mystical realm with palaces of light, and glass towers shaped like dragonfly wings.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

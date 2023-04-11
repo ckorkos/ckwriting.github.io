@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Breton Steel Armor
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="breton-helm"
+                class="modal-image"
+                onclick="openItemModal('#breton-helm-modal')"
+                src="../../files/images/item_images_text/breton/breton-helm.png">
+        </div>
+        <div>
+            <img 
+                id="breton-cuirass"
+                class="modal-image"
+                onclick="openItemModal('#breton-cuirass-modal')"
+                src="../../files/images/item_images_text/breton/breton-cuirass.png">
+        </div>
+        <div>
+            <img 
+                id="breton-gauntlets"
+                class="modal-image"
+                onclick="openItemModal('#breton-gauntlets-modal')"
+                src="../../files/images/item_images_text/breton/breton-gauntlets.png">
+        </div>
+        <div>
+            <img 
+                id="breton-boots"
+                class="modal-image"
+                onclick="openItemModal('#breton-boots-modal')"
+                src="../../files/images/item_images_text/breton/breton-boots.png">
+        </div>
+        <div>
+            <img 
+                id="breton-pauldron-R"
+                class="modal-image"
+                onclick="openItemModal('#breton-pauldron_R-modal')"
+                src="../../files/images/item_images_text/breton/breton-pauldron_R.png">
+        </div>
+        <div>
+            <img 
+                id="breton-pauldron-L"
+                class="modal-image"
+                onclick="openItemModal('#breton-pauldron_L-modal')"
+                src="../../files/images/item_images_text/breton/breton-pauldron_L.png">
+        </div>
+        <div>
+            <img 
+                id="breton-greaves"
+                class="modal-image"
+                onclick="openItemModal('#breton-greaves-modal')"
+                src="../../files/images/item_images_text/breton/breton-greaves.png">
+        </div>
+        <div>
+            <img 
+                id="breton-buckler"
+                class="modal-image"
+                onclick="openItemModal('#breton-buckler-modal')"
+                src="../../files/images/item_images_text/breton/breton-buckler.png">
+        </div>
+        <div>
+            <img 
+                id="breton-shield"
+                class="modal-image"
+                onclick="openItemModal('#breton-shield-modal')"
+                src="../../files/images/item_images_text/breton/breton-shield.png">
+        </div>
+        <div>
+            <img 
+                id="breton-tower"
+                class="modal-image"
+                onclick="openItemModal('#breton-tower-modal')"
+                src="../../files/images/item_images_text/breton/breton-tower.png">
+        </div>
+    </div>
+
+    <div id="breton-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Breton Steel Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Helm - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A visored steel helm, worn from use but stubbornly clinging to a shadow of grace. It evokes distant memories of heroic tales from your youth.
+                        <br><br>
+                        Breton children often dream of taking up enchanted blades and donning knight's armor, while the light of innocence still dances in their eyes.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="breton-cuirass-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Breton Steel Cuirass</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Cuirass - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Delicately patterned steel plate over thick sheep's wool. Intended to insulate one from the frigid air of High Rock's mountains, the wool is equally effective against Vvardenfell's rain of ash.
+                        <br><br>
+                        Breton knights engrave depictions of their noble deeds and travels into their gear. The more ornate a knight's weapon and raiment, the more storied their legacy.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="breton-gauntlets-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Breton Steel Gauntlets</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Gauntlets - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Steel gauntlets embossed with the symbols of Julianos, God of Magic. They guard your wrists while providing enough dexterity to weave intricate spells.
+                        <br><br>
+                        Owing to their distant elven ancestry, Bretons are natural sorcerers. Knights are not denied arcane schooling, and many seek esoteric secrets in the covens, wyrds, and dark forests of High Rock.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="breton-boots-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Breton Steel Boots</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Boots - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Shining boots emblazoned with the flame of Magnus, to whom wandering Breton knights often pray. Though heavy, their flexible layered steel offers good footing on the uneven hills of High Rock.
+                        <br><br>
+                        Magnus and his followers fled creation in the final moments of its fashioning. Wandering knights echo this dissatisfaction with an imperfect world, but seek to correct its injustices rather than withdraw from it.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="breton-pauldron_R-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Breton Steel Right Pauldron</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldron (R) - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        An asymmetrical pauldron flecked with the scars of war. This piece bears scaled steel plates.
+                        <br><br>
+                        This militaristic design emerged out of necessity in High Rock's bloodiest fiefdom wars, during which any man with a hill and a castle was a king.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="breton-pauldron_L-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Breton Steel Left Pauldron</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldron (L) - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Asymmetrical pauldron wreathed in spriggan vine etchings. This piece displays an arcing, upturned crest.
+                        <br><br>
+                        This organic design is inherited from the bone and hide armors crafted by the Druids of Galen, whose Witch Kings forged Breton society after the fall of their Direnni masters.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="breton-greaves-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Breton Steel Greaves</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Greaves - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Engraved steel tassets draped over a cowhide skirt. The skirt is inlaid with navy blue strips, hued with exotic dyes imported through the Iliac Bay.
+                        <br><br>
+                        In slivers of time between upheavals and assassinations, Bretons reclaim their candid spirit through poetry and song, agrarian toil, and the celebration of their myriad cultures.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="breton-buckler-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Breton Steel Buckler Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Buckler Shield - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This small, adaptable shield allows its wielder to quickly switch to ranged combat.
+                        <br><br>
+                        Despite a symbolic reliance on chivalry and forthright bravery, wars between fiefdoms often revealed Bretons' proclivities for cloaked blades and umbral sorcery.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="breton-shield-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Breton Steel Standard Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Standard Shield - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This is the shield given to Bretons on attaining knighthood. By tradition, it is unadorned until its bearer scars its polished surface in honorable combat.
+                        <br><br>
+                        Though sworn to the Empire, High Rock is internally feudalistic. Bretons are accustomed to their rulers meeting violent ends - including, when necessary, by the will of the people.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="breton-tower-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Breton Steel Tower Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Tower Shield - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The profile of this dreadnought shield is instantly recognizable to those who have beheld the ancient, cryptic Towers of Tamriel.
+                        <br><br>
+                        The Direnni Tower is thought to be Tamriel's oldest structure. Wizened Bretons relish telling youth that it is a secret bridge to the home of the Gods.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

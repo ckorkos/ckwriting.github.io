@@ -7,6 +7,9 @@
     <title>Skywind | Christopher Korkos</title>
     <link rel="icon" type="image/x-icon" href="../files/images/general/waveLight.ico">
 
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="../css/main.css">
 
@@ -19,51 +22,118 @@
 
 <body>
     <!-- Navbar -->
-    <div id="navbar-image"></div>
-    <div id="navbar">
-        <div class="item-left">
-            <img class="site-icon" src="../files/images/general/waveLight.ico" alt="Site Icon">
-            <span><b>Christopher</b> Korkos</span>
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
         </div>
-        <div class="item-right">
-            <a href="../index.html">
-                Home
-            </a>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../files/images/general/waveLight.ico" alt="Site Icon">
+                <span>
+                    <b>Christopher</b> Korkos
+                </span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
         </div>
-        <div class="item-right">
-            <a href="#projects">
-                Projects
-            </a>
-        </div>
-        <div class="item-right">
-            <a href="#about">
-                About Me
-            </a>
-        </div>
-        <div class="item-right">
-            |
-        </div>
-        <div class="item-right">
-            <a href="../files/resume.pdf" target="_blank">
-                Resume
-            </a>
-        </div>
-        <div class="item-right">
-            <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
-                <img src="../files/images/general/LinkedIn.png" alt="LinkedIn">
-            </a>
-        </div>
-        <div class="item-right">
-            <a href="mailto:chkorkos@gmail.com" target="_blank">
-                <img src="../files/images/general/Email.png" alt="Email">
-            </a>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="project-header responsive">
         <div>
             <h2>
-                The Elder Scrolls Restored: Skywind
+                The Elder Scrolls Renewal: Skywind
             </h2>
         </div>
         <div>
@@ -75,12 +145,26 @@
     <div class="project-header">
 
         <div class="project-header-image">
-            <img src="../files/images/skywind-header.png" alt="Project Header Image">
+            <!-- <div class="overlay"></div> -->
+            <!-- <h2>
+                Watch Trailer
+            </h2> -->
+            
+            <img src="../files/images/skywind-header-lg.png" alt="Project Header Image">
+
+            <a href="https://youtu.be/Qf8lMMpFIDU" target="_blank">
+                <button class="content-button-secondary">
+                    <img src="../files/images/general/play.svg">
+                    <span>
+                        Watch Trailer
+                    </span>
+                </button>
+            </a>
         </div>
 
         <div class="project-header-text">
             <h2>
-                The Elder Scrolls Restored: Skywind
+                The Elder Scrolls Renewal: Skywind
             </h2>
 
             <hr>
@@ -103,7 +187,9 @@
                 Project Overview
             </p>
             <p>
-                <i>Skywind</i> is a full recreation of <i>The Elder Scrolls III: Morrowind</i>, built using <i>The Elder Scrolls V: Skyrim’s</i> Creation Engine. The fan-driven project will offer a modern experience following the plot of the original game, including updated combat and leveling, fully voiced characters, and new secrets to uncover. As a writer for Skywind, I’ve created descriptions for in-game items, dialogue for character encounters, and quest outlines. I’ve collaborated with fellow writers to brainstorm quest design and dialogue, as well as with designers and developers to ensure my writing matches the visual and environmental experience of its world.
+                <i>Skywind</i> is a fan-driven remake of <i>The Elder Scrolls III: Morrowind</i>, built using <i>The Elder Scrolls V: Skyrim’s</i> Creation Engine. The project will include updated gameplay, fully voiced characters, and new secrets to uncover. 
+                <br><br>
+                As a writer for <i>Skywind</i> I’ve created descriptions for in-game items, dialogue for character encounters, and original quest outlines. I’ve collaborated with fellow writers to brainstorm quest design and dialogue, as well as with designers and developers to ensure my writing matches the look and feel of its world.
             </p>
             <div class="project-social-links">
                 <div>
@@ -145,32 +231,731 @@
         </div>
     </div>
 
-    <div class="project-tabs">
+    <!-- Project Tabs -->
+    <div id="skywind-nav" class="project-tabs">
         <hr class="tabs-border">
 
-        <div class="project-tab-name">
-            <h3>
-                World Encounters
-            </h3>
+        <div id="skywind-quests" class="project-tab-name tab-selected">
+            <a href="javascript:void(0);" onclick="changeSkywindTab('quests')">
+                Quests
+            </a>
         </div>
 
-        <div class="project-tab-name">
-            <h3>
+        <div id="skywind-items" class="project-tab-name">
+            <a href="javascript:void(0);" onclick="changeSkywindTab('items')">
                 Item Descriptions
-            </h3>
+            </a>
         </div>
 
-        <div class="project-tab-name">
-            <h3>
+        <div id="skywind-encounters" class="project-tab-name">
+            <a href="javascript:void(0);" onclick="changeSkywindTab('encounters')">
+                World Encounters
+            </a>
+        </div>
+
+        <div id="skywind-other" class="project-tab-name">
+            <a href="javascript:void(0);" onclick="changeSkywindTab('other')">
+                Other
+            </a>
+        </div>
+    </div>
+
+    <!-- Project Tabs - Collapsed -->
+    <div id="skywind-nav-collapse" class="project-tabs-collapse">
+        <hr class="tabs-border">
+
+        <div class="project-tab-title">
+            <h3 id="collapse-header">
                 Quests
             </h3>
         </div>
 
-        <div class="project-tab-name">
-            <h3>
-                Other
-            </h3>
+        <div class="project-tab-hamburger">
+            <a href="javascript:void(0);" onclick="openHamburger()">
+                <img src="../files/images/general/hamburger.svg" alt="Hamburger Icon">
+            </a>
         </div>
+
+        <div class="project-tab-close">
+            <a href="javascript:void(0);" onclick="closeHamburger()">
+                <img src="../files/images/general/close.svg" alt="Close Icon">
+            </a>
+        </div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+        <div id="skywind-quests-menu" class="menu-option tab-selected">
+            <a href="javascript:void(0);" onclick="changeSkywindTab('quests')">
+                Quests
+            </a>
+        </div>
+        <div id="skywind-items-menu" class="menu-option">
+            <a href="javascript:void(0);" onclick="changeSkywindTab('items')">
+                Item Descriptions
+            </a>
+        </div>
+        <div id="skywind-encounters-menu" class="menu-option">
+            <a href="javascript:void(0);" onclick="changeSkywindTab('encounters')">
+                World Encounters
+            </a>
+        </div>
+        <div id="skywind-other-menu" class="menu-option">
+            <a href="javascript:void(0);" onclick="changeSkywindTab('other')">
+                Others
+            </a>
+        </div>
+
+        <hr>
+    </div>
+
+    <!-- Quests Tab -->
+    <div id="content-quests" class="page-content content-selected">
+
+        <!-- Ashlander Pilgrims -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/red_mountain-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    Azura's Exiles
+                </h3>
+                <p>
+                    Through your sealed chitin helm, you can smell the ashfall blanketing the fringes of Azura’s Coast like fresh snow. The mask’s fibrous air filters will soon need changing. Beyond the haze that has fallen around you, an ancient hymn is recited. It is a song of loneliness, and hardship, and fleeting hope.
+                    <br><br>
+                    The song quavers from an aged traveler, seated at a struggling grahtwood campfire opposite his silent companion. He turns his glazed crimson eyes toward you, and they glint with prophecy.
+                </p>
+
+                <div class="content-buttons">
+                    <div>
+                        <a href="../html/quest-pages/pilgrims.html">
+                            <button class="content-button-primary">
+                                View Quest
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+
+        <!-- Threads of the Webspinner -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/assassin-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    Threads of the Webspinner
+                </h3>
+                <p>
+                    Eons ago, Lord Mephala sought to overturn the order of the world. Alongside her brother Sanguine, she crafted a set of artifacts which empowered her subjects to refute the laws enforced by Nirn’s gods.
+                    <br><br>
+                    Assassins of the Morag Tong believe that each of these legendary items is linked to a particular thread of fate. As the threads weave into one, the tides of causality coalesce around their bearer, allowing one to perform great deeds that ripple through history. When all are gathered, destiny itself may be defied.
+                </p>
+
+                <div class="content-buttons">
+                    <div>
+                        <a href="quest-pages/webspinner.html">
+                            <button class="content-button-primary">
+                                View Quest
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+
+        <!-- Fighters Guild Capstone -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/warhammer-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    Fighters Guild Capstone
+                </h3>
+                <p>
+                    You are Master of the Fighters Guild. Its enemies, within and without, have been vanquished. But the corruption of Sjoring Hard-Heart and his followers has put the guild on its last leg, and now it threatens to crumble before your leadership truly begins.
+                    <br><br>
+                    The guild has been tasked with a lucrative request from an old acquaintance. A mine operated by the East Empire Company is in need of protection, and soon after your arrival it comes under attack. But with each layer peeled away, a corruption far darker than the Camonna Tong emerges - exposing tendrils buried deep within Vvardenfell itself.
+                    <br><br>
+                    <b>As an original endgame quest for Skywind, this content cannot be shared until after release.</b> 
+                </p>
+
+                <!-- <div class="content-buttons">
+                    <div>
+                        <button class="content-button-primary" href="" target="_blank">
+                            View Quest
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+    </div>
+
+    <!-- Item Descriptions Tab -->
+    <div id="content-items" class="page-content">
+
+        <!-- Item Sets Grid -->
+        <div class="item-set-square">
+            <a href="item-pages/unique-weapons_staves.html">
+                <img src="../files/images/thumbnails/item_sets/unique-weapons.png" alt="" />
+                <p>
+                    Unique Weapons
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/unique-armor_clothing.html">
+                <img src="../files/images/thumbnails/item_sets/unique-armor_clothing.png" alt="" />
+                <p>
+                    Unique Armor & Clothing
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/unique-rings_amulets.html">
+                <img src="../files/images/thumbnails/item_sets/unique-rings_amulets.png" alt="" />
+                <p>
+                    Unique Rings & Amulets
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/blades.html">
+                <img src="../files/images/thumbnails/item_sets/blades.png" alt="" />
+                <p>
+                    Order of the Blades Set
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/urshilaku.html">
+                <img src="../files/images/item_images/urshilaku-common-2D_square.jpg" alt="" />
+                <p>
+                    Urshilaku Ashlander Set
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/chitin.html">
+                <img src="../files/images/thumbnails/item_sets/chitin.png" alt="" />
+                <p>
+                    Chitin Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/bonemold.html">
+                <img src="../files/images/thumbnails/item_sets/bonemold.png" alt="" />
+                <p>
+                    Bonemold Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/ashkhan.html">
+                <img src="../files/images/thumbnails/item_sets/ashkhan.png" alt="" />
+                <p>
+                    Ashkhan Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/breton.html">
+                <img src="../files/images/thumbnails/item_sets/breton.png" alt="" />
+                <p>
+                    Breton Steel Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/imp_dragonscale.html">
+                <img src="../files/images/thumbnails/item_sets/imp_dragonscale.png" alt="" />
+                <p>
+                    Imperial Dragonscale Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/imp_newtscale.html">
+                <img src="../files/images/thumbnails/item_sets/imp_newtscale.png" alt="" />
+                <p>
+                    Imperial Newtscale Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/imp_leather.html">
+                <img src="../files/images/thumbnails/item_sets/imp_leather.png" alt="" />
+                <p>
+                    Imperial Leather Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/imp_templar.html">
+                <img src="../files/images/thumbnails/item_sets/imp_templar.png" alt="" />
+                <p>
+                    Imperial Templar Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/telvanni.html">
+                <img src="../files/images/thumbnails/item_sets/telvanni.png" alt="" />
+                <p>
+                    Telvanni Mage Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/bonemold_chuzei.html">
+                <img src="../files/images/thumbnails/item_sets/chuzei_bonemold.png" alt="" />
+                <p>
+                    Chuzei Bonemold Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/bonemold_gah_julan.html">
+                <img src="../files/images/thumbnails/item_sets/gah-julan.png" alt="" />
+                <p>
+                    Gah-Julan Bonemold Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/nord_trollbone.html">
+                <img src="../files/images/thumbnails/item_sets/nord_trollbone.png" alt="" />
+                <p>
+                    Nordic Trollbone Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/nord_iron.html">
+                <img src="../files/images/thumbnails/item_sets/nord_iron.png" alt="" />
+                <p>
+                    Nordic Iron Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/nord_ringmail.html">
+                <img src="../files/images/thumbnails/item_sets/nord_ringmail.png" alt="" />
+                <p>
+                    Nordic Ringmail Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/dun_steel.html">
+                <img src="../files/images/thumbnails/item_sets/dun_steel.png" alt="" />
+                <p>
+                    Dunmer Steel Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/dun_glass.html">
+                <img src="../files/images/thumbnails/item_sets/glass.png" alt="" />
+                <p>
+                    Dunmer Glass Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/orcish.html">
+                <img src="../files/images/thumbnails/item_sets/orcish.png" alt="" />
+                <p>
+                    Orcish Armor
+                </p>
+            </a>
+        </div>
+
+        <div class="item-set-square">
+            <a href="item-pages/dwemer.html">
+                <img src="../files/images/thumbnails/item_sets/dwemer.png" alt="" />
+                <p>
+                    Dwemer Scrap Armor
+                </p>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Encounters Tab -->
+    <div id="content-encounters" class="page-content">
+
+        <!-- Ashlander Hunters -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/ashlander_camp-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    Nomads of the Ash
+                </h3>
+                <p>
+                    Life in Vvardenfell’s ashlands is cruel, unforgiving, and often short. Its nomadic tribes, self-exiled from the safety of civilization, relish their struggle as the true path to enlightenment. To Ashlanders, purpose blooms from preservation of ancestry and hard-won survival against a hostile world.
+                    <br><br>
+                    In this encounter, the player meets a group of Ashlander hunters roaming the wilds for prey. The elves are wary, but most will share wisdom from lives spent battling predator and ashstorm alike.
+                </p>
+
+                <div class="content-buttons">
+                    <!-- <div>
+                        <button class="content-button-primary" href="" target="_blank">
+                            Twine Flow
+                        </button>
+                    </div> -->
+                    <div>
+                        <a href="https://docs.google.com/spreadsheets/d/1U9C0V8IEUTEzCwHIsbci8wijFOlZbI-9/edit?usp=sharing&ouid=115504444675676715042&rtpof=true&sd=true" target="_blank">
+                            <button class="content-button-primary">
+                                Original Script
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+
+        <!-- Liberators -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/khajiit-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    Liberators
+                </h3>
+                <p>
+                    The Great Houses of Morrowind hold tightly to the power they have gathered over millennia. Against rivals this means war, assassination, and subterfuge. But within their territory, leaders maintain such authority through forceful and despicable subjugation.
+                    <br><br>
+                    In this encounter, the player meets a group of Khajiit and Argonian slaves who have broken their bonds and killed the captors who led them at swordpoint. If properly equipped, the player can help the escapees heal and find their way to safety.
+                </p>
+
+                <div class="content-buttons">
+                    <!-- <div>
+                        <a href="" target="_blank">
+                            <button class="content-button-primary">
+                                Twine Flow
+                            </button>
+                        </a>
+                    </div> -->
+                    <div>
+                        <a href="https://docs.google.com/spreadsheets/d/115h6u19lpY1nf3hHSBXiw_Z86iBifBtM/edit?usp=sharing&ouid=115504444675676715042&rtpof=true&sd=true" target="_blank">
+                            <button class="content-button-primary">
+                                Original Script
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+
+        <!-- Liberators -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/blade-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    Great House Rival
+                </h3>
+                <p>
+                    To gain power and fame in the alien dominion of Morrowind, many outlanders align with the Great Houses that compete for its volcanic terrain. With ambitious rule comes vicious conflict, and certain grudges that may not be resolved without bloodshed.
+                    <br><br>
+                    As a member of one of the Great Houses, the player may be approached by a rival and challenged to single combat. If victorious, the player may choose to spare the opponent and guide them in a new direction. If defeated, they will not show the same mercy.
+                    <br><br>
+                    <b>This encounter is still in progress.</b>
+                </p>
+
+                <div class="content-buttons">
+                    <!-- <div>
+                        <a href="" target="_blank">
+                            <button class="content-button-primary">
+                                Twine Flow
+                            </button>
+                        </a>
+                    </div> -->
+                    <!-- <div>
+                        <a href="" target="_blank">
+                            <button class="content-button-primary">
+                                Original Script
+                            </button>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+    </div>
+
+    <!-- Other Tab -->
+    <div id="content-other" class="page-content">
+
+        <!-- Level Design & Landscaping -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/vivec_canal-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    Level Design & Landscaping
+                </h3>
+                <p>
+                    To feel truly alive, a game must tell stories through the spaces in which the user navigates. Beyond dialogue and quests, narrative emerges from interaction and exploration of a vibrant world.
+                    <br><br>
+                    For these tasks, I worked with a developer to design locations in <i>Skywind</i>. I walked through the spaces in a dev build of the game, captured images, then delivered notes on the items and "clutter" that should appear in each.
+                    <br><br>
+                    We took an iterative approach to this process, seeking outside feedback from other writers, developers, and artists to incrementally improve each location before finalizing.
+                </p>
+
+                <div class="content-buttons">
+                    <div>
+                        <a href="../files/documents/other/landscaping/hlaalu-canalworks.pdf" target="_blank">
+                            <button class="content-button-primary">
+                                Hlaalu Canalworks
+                            </button>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="../files/documents/other/landscaping/garland-gatehouse.pdf" target="_blank">
+                            <button class="content-button-primary">
+                                Vivec City Gatehouse
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+
+        <!-- Level Design & Landscaping -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/lost-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    The Woods
+                </h3>
+                <p>
+                    Tales of spirits persist across every culture of Tamriel. They speak of adventure to strange realms, of mysteries lurking unseen, and of a fear as primordial as those who first stood beneath the cloak of night.
+                    <br><br>
+                    This Reachman’s fable tells the story of a young mage who encounters an ancient hermit in the depths of winter. Lost and desperate, she accepts shelter and food in exchange for sharing the secrets of her magic. But beyond the shrouded trees another presence stirs, watching and waiting.
+                </p>
+
+                <div class="content-buttons">
+                    <div>
+                        <a href="../files/documents/other/books/woods.pdf" target="_blank">
+                            <button class="content-button-primary">
+                                Read Story
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+
+        <!-- Additional Dialogue: Percius Mercius -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/bandages-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    Additional Dialogue: Percius Mercius
+                </h3>
+                <p>
+                    The Fighters Guild is a professional organization of those trained in the martial arts, and is often chartered by the Empire to protect its land, commerce, and civilians. In Vvardenfell, this company of mercenaries works with fellow Imperial factions, as well as the Great Houses Hlaalu and Redoran. 
+                    <br><br>
+                    Percius is your primary Fighters Guild quest-giver. For this task, I provided the “Goodbye” lines spoken after assigning and completing each new quest.
+                    <br><br>
+                    <b>
+                        My dialogue additions display green backgrounds.
+                    </b>
+                </p>
+
+                <div class="content-buttons">
+                    <div>
+                        <a href="https://docs.google.com/spreadsheets/d/1kEvwznQJjIH9wpxMaBCE5meQD1Lb935J/edit?usp=sharing&ouid=115504444675676715042&rtpof=true&sd=true" target="_blank">
+                            <button class="content-button-primary">
+                                Dialogue Sheet
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+
+        <!-- Dialogue Edits: Lalatia Varian -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/imperial_armor-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    Dialogue Edits: Lalatia Varian
+                </h3>
+                <p>
+                    The Imperial Cult’s chapels serve as the Empire's spiritual arm in Vvardenfell, combining the worship of the Nine Divines and venerating God Emperor Tiber Septim. The cult remains relatively amicable with the people of Vvardenfell, despite opposition by the island’s ruling Tribunal Temple.
+                    <br><br>
+                    Lalatia Varian is a Priestess and Oracle of the Imperial Cult, and serves as primary quest-giver for members of higher rank. For this task, I edited a short transcript of the final dialogue she has with the player.
+                </p>
+
+                <div class="content-buttons">
+                    <div>
+                        <a href="../files/documents/other/dialogue/lalatia/lalatia_farewell-edits.pdf" target="_blank">
+                            <button class="content-button-primary">
+                                Dialogue Edits
+                            </button>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="../files/documents/other/dialogue/lalatia/lalatia_farewell.jpg" target="_blank">
+                            <button class="content-button-secondary">
+                                Original Dialogue
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+
+        <!-- Level Design & Landscaping -->
+        <div class="content-group">
+            <div class="content-image">
+                <img src="../files/images/art/_skywind-2D.jpg" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>
+                    Skywind Application: Item Descriptions
+                </h3>
+                <p>
+                    To join the <i>Skywind</i> writing team, I was required to complete a test document with descriptions of various armor sets from the game. I tracked down each image online, researched its background lore and mechanics, then wrote descriptions that a player would read on picking up the item.
+                    <br><br>
+                    After joining <i>Skywind</i>, I worked primarily on the Item Descriptions team before branching out into quest writing and character encounters.
+                    <br><br>
+                    <b>
+                        My descriptions display green backgrounds.
+                    </b>
+                </p>
+
+                <div class="content-buttons">
+                    <div>
+                        <a href="https://docs.google.com/spreadsheets/d/11mz0sbgdwvLPw1DqreEb9Kgp2buaoyfp/edit?usp=sharing&ouid=115504444675676715042&rtpof=true&sd=true" target="_blank">
+                            <button class="content-button-primary">
+                                Item Descriptions
+                            </button>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="../files/documents/other/skywind-item-test-notes.pdf" target="_blank">
+                            <button class="content-button-secondary">
+                                Application Notes
+                            </button>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://tesrskywind.com/volunteer/" target="_blank">
+                            <button class="content-button-secondary">
+                                Skywind Volunteer Page
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-rule">
+            <hr>
+        </div>
+
     </div>
 </body>
 

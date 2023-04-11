@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Unique Weapons & Staves
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="hortator-robe"
+                class="modal-image"
+                onclick="openItemModal('#hortator-robe-modal')"
+                src="../../files/images/item_images_text/unique-armor_clothing/armor-robe_hortator.png">
+        </div>
+        <div>
+            <img
+                id="hort-ledd-robe"
+                class="modal-image"
+                onclick="openItemModal('#hort-ledd-robe-modal')"
+                src="../../files/images/item_images_text/unique-armor_clothing/armor-robe_hort_ledd.png">
+        </div>
+        <div>
+            <img 
+                id="azura-servant"
+                class="modal-image"
+                onclick="openItemModal('#azura-servant-modal')"
+                src="../../files/images/item_images_text/unique-armor_clothing/armor-azuras_servant.png">
+        </div>
+        <div>
+            <img
+                id="darksun-shield"
+                class="modal-image"
+                onclick="openItemModal('#darksun-shield-modal')"
+                src="../../files/images/item_images_text/unique-armor_clothing/armor-darksun_1.png">
+        </div>
+        <div>
+            <img 
+                id="darksun-shield-vampire"
+                class="modal-image"
+                onclick="openItemModal('#darksun-shield-vampire-modal')"
+                src="../../files/images/item_images_text/unique-armor_clothing/armor-darksun_2.png">
+        </div>
+        <div>
+            <img 
+                id="sea-queen"
+                class="modal-image"
+                onclick="openItemModal('#sea-queen-modal')"
+                src="../../files/images/item_images_text/unique-armor_clothing/armor-sea_queen.png">
+        </div>
+        <div>
+            <img 
+                id="redoran-founder"
+                class="modal-image"
+                onclick="openItemModal('#redoran-founder-modal')"
+                src="../../files/images/item_images_text/unique-armor_clothing/armor-redoran_founder.png">
+        </div>
+        <div>
+            <img 
+                id="sarano-helm"
+                class="modal-image"
+                onclick="openItemModal('#sarano-helm-modal')"
+                src="../../files/images/item_images_text/unique-armor_clothing/armor-sarano.png">
+        </div>
+    </div>
+
+    <div id="hortator-robe-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Robe of the Hortator</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Exquisite Robe
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        <i>Not yet determined.</i>
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        To unite his disparate people against the invading demons of iron and snow, Nerevar employed diplomacy, coercion, and holy violence in equal measure. Such was his legacy.
+                        <br><br>
+                        Your own path forward is yet untread, fate-stricken wayfarer. You have only to step out and discover it.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        This robe is received from Master Aryon in Tel Vos when named Hortator of House Telvanni. Each Great House leader provides a garment to be worn by the uniter of Morrowind.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="hort-ledd-robe-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Robe of Hort-Ledd the Harmonious</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Extravagant Robe
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Turn Undead
+                    </li>
+                    <li>
+                        Shield
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This flowing fabric radiates an inner warmth. As you run a hand across its vibrant surface, a shadow of familiarity passes over your thoughts.
+                        <br><br>
+                        Hort-Ledd forsook a lifelong vow of pacifism when the Moonshadow illuminated his destiny. Not all Incarnates live to fulfill their prophesied roles, but they share a thread of fate nonetheless.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        This robe is gifted by the ghost of Hort-Ledd in the Cavern of the Incarnate. Hort-Ledd was an incarnation of Lord Nerevar who failed to mantle his precursor, and thus was fated to linger on among the forgotten.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="azura-servant-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Azura's Servant</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Daedric Tower Shield
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Frost Damage
+                    </li>
+                    <li>
+                        Drain Magicka
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This legendary shield is stained by the soul of a barbaric northern god, whose ashen form was banished from Vvardenfell by the Son of Moonshadow.
+                        <br><br>
+                        Its cracks radiate dawn's bloody fingers, shading your surroundings with transient light and whispers of prophecy.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        This shield is guarded by a powerful Daedra beneath Tel Vos, a fortress of the Telvanni Lord Master Aryon. It is a relic of an ancient era.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="darksun-shield-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Darksun Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Unique Ebony Shield
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Drain Magicka (Self)
+                    </li>
+                    <li>
+                        Reflect Spell Damage
+                    </li>
+                    <li>
+                        Restore Fatigue
+                    </li>
+                    <li>
+                        Night Eye
+                    </li>
+                    <li>
+                        When worn by a vampire, inflict massive and constant fire damage and display the <a onclick="switchItemModal('darksun-shield-vampire-modal')">Vision of the Darksun</a>.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        As you grip this shield of umbral alloy, a pale light falls across your surroundings. Others seem unable to perceive the luminescence, and its source hides just out of sight - even from you.
+                        <br><br>
+                        It is said that the first Shadowmage devised an elusive sun by stringing together the residual luminosity of the stars. It guides and protects those who venture into shadow, but revealing its light requires an offering of spirit.
+                    </li>
+                </ul>
+
+                <!-- <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="darksun-shield-vampire-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Vision of the Darksun</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item
+                </p>
+                <ul>
+                    <li>
+                        Darksun Shield, when equipped while the player is a Vampire
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        After closing popup, inflict constant and severe fire damage; most players should die within a few seconds.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Popup Text
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        In your mind's eye, a ring of silver light blooms from an infinite darkness. Its rays are warm, almost pleasant, and its inscribed circle of void beckons you forth.
+                        <br><br>
+                        The warmth grows to a cruel, blistering heat. You try raising your hands to shield your bubbling face, but they have already crumbled to ash.
+                    </li>
+                </ul>
+
+                <!-- <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="sea-queen-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Carapace of the Sea Queen</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Unique Dreugh Cuirass
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Fortify Endurance
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Each generation a dreugh is born with a unique cerulean shell, marking her as royalty. It was such a queen who whispered the Secret of Cycles to the Egg of the Three in One.
+                        <br><br>
+                        The dreugh's god has been bested a hundredfold by the wiles of Vehk. Still, the cruel spires of its people stand as shadows against the drowned depths of Nirn.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Received by donating a Dreugh Wax to the shrine in Koal Cave after defeating the Dreugh Warlord.
+                    </li>
+                    <li>
+                        Koal Cave is sacred to the Tribunal Temple, being the arena where Lord Vivec shook Vvardenfell in his battle with the Ruddy Man.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="redoran-founder-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Redoran Founder's Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Redoran Master Helm
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        None
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        An ancient fanged helm worn by House Redoran's Champion of the First Council. In some places, the bone is as rough and fractured as the banks of a foyada. In others, it is smooth and unblemished.
+                        <br><br>
+                        How many eyes have closed, for the final time, behind its sharpened slits?
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Recovered from a boorish thief for House Redoran.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="sarano-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Defiled Sarano Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Unique Ebony Helm
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        None
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        With enough soap and elbow grease, you may be able to scour the inside of this dear family heirloom. The stench, however, will forever be smeared into your memory.
+                        <br><br>
+                        Perhaps it was the Sarano family's breaking of ancestral ties to Boethiath which inspired this revenge by their once-revered anticipation.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Retrieved from a Hunger in the Sarano Family Tomb, which has been overrun by vengeful Daedra.
+                    </li>
+                    <li>
+                        As part of the Fighters Guild, the player will be tasked with cleansing the tomb.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

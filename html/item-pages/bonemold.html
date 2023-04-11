@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Bonemold Armor
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="bonemold-helm"
+                class="modal-image"
+                onclick="openItemModal('#bonemold-helm-modal')"
+                src="../../files/images/item_images_text/bonemold/bonemold-helm.png">
+        </div>
+        <div>
+            <img 
+                id="bonemold-cuirass"
+                class="modal-image"
+                onclick="openItemModal('#bonemold-cuirass-modal')"
+                src="../../files/images/item_images_text/bonemold/bonemold-cuirass.png">
+        </div>
+        <div>
+            <img 
+                id="bonemold-gauntlets"
+                class="modal-image"
+                onclick="openItemModal('#bonemold-gauntlets-modal')"
+                src="../../files/images/item_images_text/bonemold/bonemold-gauntlets.png">
+        </div>
+        <div>
+            <img 
+                id="bonemold-boots"
+                class="modal-image"
+                onclick="openItemModal('#bonemold-boots-modal')"
+                src="../../files/images/item_images_text/bonemold/bonemold-boots.png">
+        </div>
+        <div>
+            <img 
+                id="bonemold-pauldrons"
+                class="modal-image"
+                onclick="openItemModal('#bonemold-pauldrons-modal')"
+                src="../../files/images/item_images_text/bonemold/bonemold-pauldrons.png">
+        </div>
+        <div>
+            <img 
+                id="bonemold-greaves"
+                class="modal-image"
+                onclick="openItemModal('#bonemold-greaves-modal')"
+                src="../../files/images/item_images_text/bonemold/bonemold-greaves.png">
+        </div>
+        <div>
+            <img 
+                id="bonemold-buckler"
+                class="modal-image"
+                onclick="openItemModal('#bonemold-buckler-modal')"
+                src="../../files/images/item_images_text/bonemold/bonemold-buckler.png">
+        </div>
+        <div>
+            <img 
+                id="bonemold-shield"
+                class="modal-image"
+                onclick="openItemModal('#bonemold-shield-modal')"
+                src="../../files/images/item_images_text/bonemold/bonemold-shield.png">
+        </div>
+        <div>
+            <img 
+                id="bonemold-tower"
+                class="modal-image"
+                onclick="openItemModal('#bonemold-tower-modal')"
+                src="../../files/images/item_images_text/bonemold/bonemold-tower.png">
+        </div>
+    </div>
+
+    <div id="bonemold-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Bonemold Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Helm - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This helm of ochre bone has been warped into the silhouette of a cliff racer's upturned crown. Its gradual contours minimize wind resistance in even the most violent of dust storms.
+                        <br><br>
+                        Life on Vvardenfell is cruel and often short. A prevalence of animal iconography reminds warriors that they too are ephemeral beings locked in an unbroken cycle of change.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bonemold-cuirass-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Bonemold Cuirass</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Cuirass - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This layered bone cuirass is bound to you by belts and wraps of tough kagouti leather. When its claustrophobic rigidity finally fades into the background, you can feel its traces of life energy stoke your own courage.
+                        <br><br>
+                        Within mortals are stony roots of bone, gales of life-giving air, and tributaries of sanguine memory. Upon the lands and seas of Nirn, each is a world to which the flame of soul is bound.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bonemold-gauntlets-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Bonemold Gauntlets</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Gauntlets - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Vaguely humanoid bones have been pressed and molded into these sharpened avian gauntlets. The death runes branding their forearms conjure instinctive visions of blazing stone kilns and scents of once-living ash.
+                        <br><br>
+                        Ancestral finger bones are said to guide the Dunmer toward their fate, compelled by the distant drum of a doom-driven heart.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bonemold-boots-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Bonemold Boots</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Boots - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Though lovingly carved and seared with ritual markings, these boots of bone and guar hide incorporate the bones of criminals and heretics unfit to charge the mighty Ghostfence.
+                        <br><br>
+                        Outlanders often express revulsion at the peculiar organic materials peddled by Dunmeri merchants. But on the Black Isle of Morrowind, bone and chitin are precious as silver.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bonemold-pauldrons-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Bonemold Pauldrons</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldron - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Rounded shoulder plates branded with the mark of Oblivion itself. The bones contain imprints from mortal souls, which engender subtle defiance against the forces of the outer darkness.
+                        <br><br>
+                        Some refused the Tribunal's Ghostfence decree and continued to craft armor from the bones of their clan's noble dead. For some, it is an act of desperation - for others, furtive insolence.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bonemold-greaves-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Bonemold Greaves</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Greaves - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        In rare moments, these broad greaves shift imperceptibly without your command - as though their structure of bone and ligaments retains some buried memory of free movement.
+                        <br><br>
+                        At firelit campsites, Dunmer caravaners recount legends of the restless dead who shamble in an endless search for their stolen bones. Nothing but tall tales, to be sure.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bonemold-buckler-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Bonemold Buckler Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Buckler Shield - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A light shield of cracked bone framed upon a broken Graht Oak circlet. Whether by design or incident, the fractured ends seem fated never to meet.
+                        <br><br>
+                        Saint Veloth's sermons impart the belief that all realms - whether of substance, spirit, or void - belong to an inseparable whole. It is the lack of insight inherent to mortals which conceals the walking ways between them.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bonemold-shield-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Bonemold Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Standard Shield - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A vicious roundshield whose uneven bony flesh is stretched over a frame of stubborn blisterwood. Its alit-spine teeth may catch a thrusting spear or end a fallen rival.
+                        <br><br>
+                        As hardship and turmoil become ingrained in a society, they are inevitably reflected in its craftsmanship. The Arena has yet to bear a people incapable of employing murderous creativity.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bonemold-tower-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Bonemold Tower Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Tower Shield - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A monstrous shield whose bulk is an amalgam of sharpened kagouti tusks, bull netch skull plates, and the bones of other, less familiar beasts. This aegis is a testament to both the ingenuity and desperation of those who roam Vvardenfell's arid wastes.
+                        <br><br>
+                        In the void, souls flow as uniform energy. It is environment, lineage, and conflict which distinguish organic life and obscure this unity.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

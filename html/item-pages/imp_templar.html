@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Imperial Templar Armor
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="templar-helm"
+                class="modal-image"
+                onclick="openItemModal('#templar-helm-modal')"
+                src="../../files/images/item_images_text/imp_templar/imp_templar-helm.png">
+        </div>
+        <div>
+            <img 
+                id="templar-cuirass"
+                class="modal-image"
+                onclick="openItemModal('#templar-cuirass-modal')"
+                src="../../files/images/item_images_text/imp_templar/imp_templar-cuirass.png">
+        </div>
+        <div>
+            <img 
+                id="templar-gauntlets"
+                class="modal-image"
+                onclick="openItemModal('#templar-gauntlets-modal')"
+                src="../../files/images/item_images_text/imp_templar/imp_templar-gauntlets.png">
+        </div>
+        <div>
+            <img 
+                id="templar-boots"
+                class="modal-image"
+                onclick="openItemModal('#templar-boots-modal')"
+                src="../../files/images/item_images_text/imp_templar/imp_templar-boots.png">
+        </div>
+        <div>
+            <img 
+                id="templar-pauldron"
+                class="modal-image"
+                onclick="openItemModal('#templar-pauldron-modal')"
+                src="../../files/images/item_images_text/imp_templar/imp_templar-pauldrons.png">
+        </div>
+        <div>
+            <img 
+                id="templar-greaves"
+                class="modal-image"
+                onclick="openItemModal('#templar-greaves-modal')"
+                src="../../files/images/item_images_text/imp_templar/imp_templar-greaves.png">
+        </div>
+    </div>
+
+    <div id="templar-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Templar Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Helm - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        An ornate helm brandishing the horns of Morihaus and a crimson plume to honor the revels of Saint Alessia. Its steel slats, reinforced to endure the mighty thu'um, cage your face as if to restrain a vicious beast.
+                        <br><br>
+                        Eternal, the ancient stones,
+                        <br>
+                        Wond'rous, the welkynd light,
+                        <br>
+                        Crumbling, the Ayleid bones,
+                        <br>
+                        Finish'd, the red-star's fight.
+                        <br>
+                        - Ulixes of Vilverin, "Alessia"
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="templar-cuirass-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Templar Cuirass</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Cuirass - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Brass-burnished steel plate festooned with a cloak of Cyrodiilic Crimson, Imperial Cult medallions, and the roaring aspect of Akatosh laid over the heart. The exquisite icons stoke dread in those who have witnessed the Templars' frenzied butchery of both adversaries and lesser allies.
+                        <br><br>
+                        "The Templars bear the diamond of Akatosh, as did the Whitestrake before them. It represents their oath to Alessia's line, for whom the Dragonfires eternally burn."
+                        <br>
+                        - Wenengrus Monhona, Imperial Historian
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="templar-gauntlets-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Templar Gauntlets</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Gauntlets - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Radiant vambraces gilded with the symbol of the ancestor moth - fragile beings imbued with time-flung memory and prophecy. They catalyze the prescience which guides the fate of the Empire.
+                        <br><br>
+                        "The light at the center of our world is preserved by carving away darkness at its edges. It is this twilight which we Templars command."
+                        <br>
+                        - The Red Dome Commandments
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="templar-boots-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Templar Boots</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Boots - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Brass-rimmed shinplates rise to meet pants the shade of Lake Rumare. Inducted Templars are given extraordinary equipment, but first they must survive conditions designed to break lesser beings.
+                        <br><br>
+                        "Our hundred best soldiers were taken to the personal prison island of Emperor Pelagius Septim for Templar Induction. Only five returned, yet a hollow madness had taken root in their eyes which told me that they too had died."
+                        <br>
+                        - Anonymous Testimony
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="templar-pauldron-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Templar Pauldrons</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldrons - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Scaled steel plates that suggest a draconic heritage. Templars once concealed crystal vials of Tiber Septim's blood beneath each arm. When imbibed, this communion would grant the fanatics a fraction of the Stormcrown's divine savagery.
+                        <br><br>
+                        "Believing the strangers Imperial spies, I ordered them taken to Wind Keep for interrogation. I alone escaped the inhuman slaughter the two Templars wrought once inside."
+                        <br>
+                        - Captain's Report from the Failed Corvax Insurrection
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="templar-greaves-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Templar Greaves</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Greaves - Heavy Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        These hefty greaves speak to the endurance of Cyrodiil's soldiers. Physical and arcane augmentations instill that Templar candidates are not individuals, but avatars of the Empire Eternal.
+                        <br><br>
+                        "The Red Dome's induction is a sieve through which Templars are sifted from Mortals. In doing so we are removed from the Ancestor Cycle, having become fragments of the Unified Will." 
+                        <br>- The Red Dome Commandments
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

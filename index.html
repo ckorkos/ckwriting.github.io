@@ -7,6 +7,9 @@
     <title>Writing Portfolio | Christopher Korkos</title>
     <link rel="icon" type="image/x-icon" href="./files/images/general/waveLight.ico">
 
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -19,44 +22,115 @@
 
 <body>
     <!-- Navbar -->
-    <div id="navbar-image"></div>
-    <div id="navbar">
-        <div class="item-left">
-            <img class="site-icon" src="./files/images/general/waveLight.ico" alt="Site Icon">
-            <span><b>Christopher</b> Korkos</span>
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="#">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
         </div>
-        <div class="item-right">
-            <a href="index.html">
-                Home
-            </a>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
         </div>
-        <div class="item-right">
-            <a href="#projects">
-                Projects
-            </a>
-        </div>
-        <div class="item-right">
-            <a href="#about">
-                About Me
-            </a>
-        </div>
-        <div class="item-right">
-            |
-        </div>
-        <div class="item-right">
-            <a href="./files/resume.pdf" target="_blank">
-                Resume
-            </a>
-        </div>
-        <div class="item-right">
-            <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
-                <img src="./files/images/general/LinkedIn.png" alt="LinkedIn">
-            </a>
-        </div>
-        <div class="item-right">
-            <a href="mailto:chkorkos@gmail.com" target="_blank">
-                <img src="./files/images/general/Email.png" alt="Email">
-            </a>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="#" onclick="closeHamburgerMain()">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="#name" onclick="closeHamburgerMain()">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="#about" onclick="closeHamburgerMain()">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a 
+                        href="https://www.linkedin.com/in/chkorkos/" 
+                        onclick="closeHamburgerMain()" 
+                        target="_blank">
+                        <img src="files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a 
+                        href="mailto:chkorkos@gmail.com" 
+                        onclick="closeHamburgerMain()" 
+                        target="_blank">
+                        <img src="files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -98,7 +172,18 @@
     <hr class="homepage-hr">
 
     <!-- About Me -->
-    <div id="about"></div>
+    <div id="about">
+        <div id="about-picture">
+            <img src="files/images/headshot.jpg" alt="profile-picture"/>
+        </div>
+        <div id="about-text">
+            <p>
+                Since I first delved into literature and entertainment, I've embraced the genres within speculative fiction. To me, fantasy was the childhood call to adventure that lives in us all. Science fiction, however, was appropriately cosmic - crafting utopian dreams which we must strive to build, or twisted realities driven by our most sinister natures.
+                <br><br>
+                I completed a Minor in Literature Writing at University of California, San Diego, but I've continued my journey as a writer beyond education. My goal is to write for the field of game design, which merges the disciplines of art, technology, music, drama, and narrative to bring life to these many worlds.
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>

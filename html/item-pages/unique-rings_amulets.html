@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Unique Rings & Amulets
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="ring-of-azura"
+                class="modal-image"
+                onclick="openItemModal('#ring-of-azura-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/ring-azura.png">
+        </div>
+        <div>
+            <img 
+                id="caius-ring"
+                class="modal-image"
+                onclick="openItemModal('#caius-ring-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/ring-caius.png">
+        </div>
+        <div>
+            <img 
+                id="mage-ring"
+                class="modal-image"
+                onclick="openItemModal('#mage-ring-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/ring-mage.png">
+        </div>
+        <div>
+            <img 
+                id="foe-grinder"
+                class="modal-image"
+                onclick="openItemModal('#foe-grinder-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/ring-foe_grinder.png">
+        </div>
+        <div>
+            <img 
+                id="foe-quern"
+                class="modal-image"
+                onclick="openItemModal('#foe-quern-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/ring-foe_quern.png">
+        </div>
+        <div>
+            <img 
+                id="regeneration"
+                class="modal-image"
+                onclick="openItemModal('#regeneration-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/ring-regeneration.png">
+        </div>
+        <div>
+            <img 
+                id="light-shadow"
+                class="modal-image"
+                onclick="openItemModal('#light-shadow-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/amulet-light_shadow.png">
+        </div>
+        <div>
+            <img 
+                id="roses-beauty"
+                class="modal-image"
+                onclick="openItemModal('#roses-beauty-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/amulet-roses_beauty.png">
+        </div>
+        <div>
+            <img 
+                id="spirit-memory"
+                class="modal-image"
+                onclick="openItemModal('#spirit-memory-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/amulet-spirit_memory.png">
+        </div>
+        <div>
+            <img 
+                id="might-skill"
+                class="modal-image"
+                onclick="openItemModal('#might-skill-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/amulet-might_skill.png">
+        </div>
+        <div>
+            <img 
+                id="bloody-amulet"
+                class="modal-image"
+                onclick="openItemModal('#bloody-amulet-modal')"
+                src="../../files/images/item_images_text/unique-rings_amulets/amulet-bloody.png">
+        </div>
+    </div>
+
+    <div id="ring-of-azura-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Ring of Azura</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Unique Ring Model
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Once per day, a killing blow will instead fill the player's health bar.
+                    </li>
+                    <li>
+                        Winged Twilights will not attack the player, and will assist in combat if the player is attacked; this effect extends to those summoned by enemies.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The signet wielded by Azura's Champion of Dawn and Dusk. It is forged of twilight, engraved with prophecy, and shaded by the soul of the fallen enemy. Within its moonlit aria, an echo of the Sharmat lingers. It speaks.
+                        <br><br>
+                        "Do you hear it, sweet Nerevar? Do you hear the beating heart of this broken world? It beats for you now, as it did in the first days."
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        This item is given to the player at the end of the main quest, as a final reward by the goddess Azura for completing her crusade.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="caius-ring-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Caius' Ring</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Common Ring
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Fortify Security
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This pauper's ring is marred by a pattern of scrapes and blemishes - mere accidental wear to those unacquainted with the Order. Etched within the ring, scrambled Cyrodilic forms a coded message:
+                        <br><br>
+                        "A blade may take a life. A voice may take the world."
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        This item is part of the <a href="blades.html" target="_blank">Order of the Blades Set</a>.
+                    </li>
+                    <li>
+                        This item is given during the main quest, and signifies the player’s ascension to Caius Cosades’ role as an independent Blade of the Empire.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="mage-ring-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Mage Ring</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Common Ring
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Fortify Intelligence
+                    </li>
+                    <li>
+                        Fortify Willpower
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A miniscule constellation glimmers in the central void of this timeworn stone ring. Its pale beads of light fade after a moment, but their energy continues to thrum within you.
+                        <br><br>
+                        To a keen and trusting mage, the stars are ever a close companion.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="foe-grinder-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Foe-Grinder</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Common Ring
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Fortify Blunt (20)
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A stone ring chiseled with primitive pictographs of horned beastmen fighting alongside humans to overthrow a despotic feathered master. 
+                        <br><br>
+                        Its images impart a lesson in tyranny - that the shattering of chains comes not from the mercy of the powerful, but from the righteous fury of those bound by them.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        The player receives this ring from Lalatia Varian as part of the Imperial Cult questline.
+                    </li>
+                    <li>
+                        This ring is only received if the player's Blunt skill is under 40. If the player's Blunt skill is over 40, they receive Foe-Quern instead.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="foe-quern-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Foe-Quern</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Common Ring
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Fortify Blunt (5)
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A stone ring chiseled with primitive pictographs of early humans building new lives amid the ruins of star-flecked spires.
+                        <br><br>
+                        The strength it imparts is meager, but the blessing serves as a reminder of how far you've come. How many battles lie ahead? How many foes must you crush before you can lay down your arms?
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        The player receives this ring from Lalatia Varian as part of the Imperial Cult questline.
+                    </li>
+                    <li>
+                        This ring is only received if the player's Blunt skill is over 40. If the player's Blunt skill is under 40, they receive Foe-Grinder instead.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="regeneration-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Ring of Regeneration</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Expensive Ring
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li>
+                        Restore Health
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Life exists to feed life. The souls bound to this opulent ring have awoken to that truth, yet still they clamor for release.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Worn by Delvam Andarys, a wanted necromancer in control of an ancient Velothi tower on Azura's Coast. Delvam Andarys is the target of a Tribunal Temple quest.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="light-shadow-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Amulet of Light and Shadow</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Common Amulet
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li></li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The delicate carvings across this humble amulet form a prayer to the Moonshadow. Writing is anathema to Ashlanders, yet this expression of faith defies such limitations.
+                        <br><br>
+                        Balori sil gokled tifur iluvi,
+                        <br>
+                        Lakor luuhn damjulan ara.
+                        <br>
+                        Balori tear gokled tifur hadishk,
+                        <br>
+                        Lakor morjuul gherde malath.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Received in the "good ending" of the <a href="" target="_blank">Azura's Pilgrims quest</a>, if the player selects "Light and Shadow" during the first encounter.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="roses-beauty-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Amulet of Roses and Beauty</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Common Amulet
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li></li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The delicate carvings across this humble amulet form a prayer to the Moonshadow. Writing is anathema to Ashlanders, yet this expression of faith defies such limitations.
+                        <br><br>
+                        Balori lo binthid tifur merdekh'ohuhm,
+                        <br>
+                        En os bahr'norin taljed.
+                        <br>
+                        Baldri yi jakeesh gher malath,
+                        <br>
+                        En asuhn muhrsan lakor daldeer'kili.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Received in the "good ending" of the <a href="" target="_blank">Azura's Pilgrims quest</a>, if the player selects "Roses and Beauty" during the first encounter.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="spirit-memory-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Amulet of Spirit and Memory</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Common Amulet
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li></li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The delicate carvings across this humble amulet form a prayer to the Moonshadow. Writing is anathema to Ashlanders, yet this expression of faith defies such limitations.
+                        <br><br>
+                        As shaaln khosig enhi'osuhl,
+                        <br>
+                        En Veloth gan'khosig.
+                        <br>
+                        Balori as sey harid bahr'dimi,
+                        <br>
+                        En balori panduu'iam okad'marik.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Received in the "good ending" of the <a href="" target="_blank">Azura's Pilgrims quest</a>, if the player selects "Spirit and Memory" during the first encounter.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="might-skill-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Amulet of Might and Skill</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Common Amulet
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li></li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The delicate carvings across this humble amulet form a prayer to the Moonshadow. Writing is anathema to Ashlanders, yet this expression of faith defies such limitations.
+                        <br><br>
+                        Balori molag'iam nifid suul de ara,
+                        <br>
+                        Balori uriip'iam uripad muhr'm jerlosh,
+                        <br>
+                        En ku'elm flur'hagil muhrsag,
+                        <br>
+                        Balori shoyuul'iam shotelad'ascif almardi.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Received in the "good ending" of the <a href="" target="_blank">Azura's Pilgrims quest</a>, if the player selects "Might and Skill" during the first encounter.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bloody-amulet-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Bloodstained Amulet</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Base Item
+                </p>
+                <ul>
+                    <li>
+                        Common Amulet
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Enchantments/Effects
+                </p>
+                <ul>
+                    <li></li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This humble amulet was carved from resources gathered in a pilgrimage across ancestral lands.
+                        <br><br>
+                        Dried blood smears its surface, obscuring the delicate script that once formed a prayer to the Moonshadow.
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Notes
+                </p>
+                <ul>
+                    <li>
+                        Received in the "bad ending" of the <a href="" target="_blank">Azura's Pilgrims quest</a>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

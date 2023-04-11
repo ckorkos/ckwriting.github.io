@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Ashkhan Armor
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="ashkhan-helm"
+                class="modal-image"
+                onclick="openItemModal('#ashkhan-helm-modal')"
+                src="../../files/images/item_images_text/ashkhan/ashkhan-helm.png">
+        </div>
+        <div>
+            <img 
+                id="ashkhan-cuirass"
+                class="modal-image"
+                onclick="openItemModal('#ashkhan-cuirass-modal')"
+                src="../../files/images/item_images_text/ashkhan/ashkhan-cuirass.png">
+        </div>
+        <div>
+            <img 
+                id="ashkhan-gauntlets"
+                class="modal-image"
+                onclick="openItemModal('#ashkhan-gauntlets-modal')"
+                src="../../files/images/item_images_text/ashkhan/ashkhan-gauntlets.png">
+        </div>
+        <div>
+            <img 
+                id="ashkhan-boots"
+                class="modal-image"
+                onclick="openItemModal('#ashkhan-boots-modal')"
+                src="../../files/images/item_images_text/ashkhan/ashkhan-boots.png">
+        </div>
+        <div>
+            <img 
+                id="ashkhan-pauldron-R"
+                class="modal-image"
+                onclick="openItemModal('#ashkhan-pauldron_R-modal')"
+                src="../../files/images/item_images_text/ashkhan/ashkhan-pauldron_R.png">
+        </div>
+        <div>
+            <img 
+                id="ashkhan-pauldron-L"
+                class="modal-image"
+                onclick="openItemModal('#ashkhan-pauldron_L-modal')"
+                src="../../files/images/item_images_text/ashkhan/ashkhan-pauldron_L.png">
+        </div>
+        <div>
+            <img 
+                id="ashkhan-greaves"
+                class="modal-image"
+                onclick="openItemModal('#ashkhan-greaves-modal')"
+                src="../../files/images/item_images_text/ashkhan/ashkhan-greaves.png">
+        </div>
+        <div>
+            <img 
+                id="ashkhan-tower"
+                class="modal-image"
+                onclick="openItemModal('#ashkhan-tower-modal')"
+                src="../../files/images/item_images_text/ashkhan/ashkhan-tower.png">
+        </div>
+    </div>
+
+    <div id="ashkhan-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Ashkhan Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Helm - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The amber-eyed skull of a former Ashkhan, wreathed in vivid plumes that the Wise Women claim belong to an extinct feathered race that wandered Tamriel eons ago.
+                        <br><br>
+                        Even as clans wither and ash envelops the world, stories may linger on. But in time, all must fade.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="ashkhan-cuirass-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Ashkhan Cuirass</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Cuirass - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Plates of elven bone marked with Velothi patterns and mounted atop layers of dark netch leather. The underlying folds are tattooed with Daedric prayers to the Seven - expressing love, defiance, and hate in equal measure.
+                        <br><br>
+                        The Ashlanders do not essentialize their gods as good or evil. To them, the Daedra simply are.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="ashkhan-gauntlets-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Ashkhan Gauntlets</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Gauntlets - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Wide bone gauntlets wrapped with prayer cloth and dangling ritual beads. While leading the tribe, they serve as reminders that one's hands must always enact the will of the Seven.
+                        <br><br>
+                        When a new Ashkhan is needed, duels of cunning, strength, and discernment may be issued between contenders.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="ashkhan-boots-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Ashkhan Boots</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Boots - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Traversing the Ashlands requires a firm stance and unerring stride. These boots of bone and netch leather root you to the earth with the strength of the stone peaks that emerge from Vvardenfell's abyssal dunes.
+                        <br><br>
+                        Wise Women, the Truthkeepers of Resdayn, speak of terrible leviathans who roamed the ashlands before recorded history.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="ashkhan-pauldron_R-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Ashkhan Right Pauldron</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldron (R) - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The pragmatism of Ashlander life often conceals ingenuity and rich symbolism. For example, this mantle is draped with tough, fire-resistant blightmoth silk and adorned with alit fangs and precious stones.
+                        <br><br>
+                        A hardscrabble existence has not prevented the Ashlanders from facing the fiercest beasts of Vvardenfell, nor from delving into its most secluded hollows.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="ashkhan-pauldron_L-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Ashkhan Left Pauldron</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldron (L) - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The primeval skull of a clannfear bound to the shoulder by thick twine and branded with rust-red Daedric runes.
+                        <br><br>
+                        Close to Red Mountain's nexus of strange power, the physical and ethereal planes seem to converge. It is within this sphere of Lorkhanic energy that even the strength of the Divines fails.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="ashkhan-greaves-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Ashkhan Greaves</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Greaves - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A tough kilt of netch hide and reinforced reptile bone. The ancestral Velothi patterns are unbroken where they meet the armor, expressing the Ashlander belief that family and lineage connect all existence.
+                        <br><br>
+                        Ashlanders value the tribe above individual relationships. Fellow members are equal siblings, while the Wise Women and Ashkhans are their unwavering parents.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="ashkhan-tower-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Ashkhan Tower Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Tower Shield - Light Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Both bastion and ancestral idol, this Ashlander shield shines with iridescent shalk elytra. Wise Women liken its sheen to the eternally frozen Tear of Veloth, shed at the end of his exodus.
+                        <br><br>
+                        Honor the Ashkhan, forger of paths.
+                        <br>
+                        Heed the Truthkeeper, weaver of song.
+                        <br>
+                        Hail the Stranger, who knows not the way,
+                        <br>
+                        Yet traces the footsteps of Moon-and-Star.
+                        <br>
+                        - Footprints in Ash
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

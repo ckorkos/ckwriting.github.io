@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('quests')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="subpage-header-title"></div>
+
+            <div class="subpage-header-side"></div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('quests')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Azura's Exiles
+                </h2>
+            </div>
+
+            <div class="subpage-header-side"></div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="quest-content">
+        <div>
+            <img id="exiles-banner" src="../../files/images/art/red_mountain-2D.jpg" alt="Exiles Banner"/>
+        </div>
+
+        <div>
+            <h3>
+                Quest Overview
+            </h3>
+            <p>
+                In <i>Azura's Exiles</i>, the player meets a pair of banished Urshilaku Ashlanders making pilgrimage to Azura's Shrine. The older of the two delivers a cryptic prophecy, but quickly reverts to casual conversation. He gives their names and purpose, shares his specially brewed tea, and displays a warmth uncommon in the wastes of Vvardenfell.
+                <br><br>
+                Traveling the island, these pilgrims are encountered three times. In each meeting, the player must make decisions that determine their fate, for better or worse.
+                <br><br>
+                I worked with a writing lead to expand what was initially a single random encounter into a larger quest, stretching several locations and resulting in permanent changes to the world. Additionally, I worked with a level designer to plan and build each setting in which the pair would be encountered.
+            </p>
+        </div>
+
+        <div class="quest-buttons">
+            <!-- <div>
+                <a href="" target="_blank">
+                    <button class="content-button-primary">
+                        Twine Flow
+                    </button>
+                </a>
+            </div> -->
+            <div>
+                <a href="https://docs.google.com/spreadsheets/d/1IxoAFjqwlebYy_ps3LNgl2AvgyKMdU4B/edit?usp=sharing&ouid=115504444675676715042&rtpof=true&sd=true" target="_blank">
+                    <button class="content-button-primary">
+                        Original Script
+                    </button>
+                </a>
+            </div>
+            <div>
+                <a href="../../files/documents/quests/pilgrims/pilgrims-outline.pdf" target="_blank">
+                    <button class="content-button-secondary">
+                        Plot Outline
+                    </button>
+                </a>
+            </div>
+            <div>
+                <a href="../../files/documents/quests/pilgrims/design-notes.pdf" target="_blank">
+                    <button class="content-button-secondary">
+                        Level Design Notes
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <h3>
+                Part One: Azura's Coast
+            </h3>
+            <p>
+                Traveling Azura’s Coast, a somber song is heard. The player encounters the Urshilaku pilgrims Dalder-Sai and Aka-Lorna, on the path to the Shrine of Azura itself.
+            </p>
+            <p>
+                Dalder-Sai sings an ancient chant to Azura. He demonstrates a strange clairvoyance, calling the player “Luhn’silvar”, and speaks at length about their goddess of Dawn and Dusk. Aka-Lorna, on the other hand, has taken a redemptive oath of silence and does not speak throughout the encounter.
+            </p>
+            <p>
+                While conversing with the older pilgrim, the player can recommend an offering to present Azura. After leaving and returning to the region, the pilgrims have departed and the shrine is decorated with a combination of items depending on the recommendation.
+            </p>
+
+            <h3 class="quest-title-buffer">
+                Part Two: Camp Urshilaku
+            </h3>
+            <p>
+                Near the Urshilaku Ashlander Camp, a new song can be heard. Dalder-Sai is teaching Aka-Lorna a ballad from beyond their culture – a song of joy and renewal from wanderers of a distant desert. The young warrior-pilgrim has paid his debt of honor and may again speak. But he struggles with the song, being unfamiliar with the foreign language.
+            </p>
+            <p>
+                In this conversation, the pilgrims share the events that have occurred between meetings. Before their first meeting with the player, Aka-Lorna had been exiled from the Urshilaku Tribe, having defied the teachings of the elders. The young warrior has been absolved at the Shrine of Azura, but the exile is a permanent and irreversible one - having come nearly to violence with Sul-Matuul himself.
+            </p>
+            <p>
+                On speaking with Aka-Lorna, the player learns that he was cast from the Urshilaku Tribe for speaking out against the Prophecy of the Nerevarine. He believes that the prophecy is a lie, meant to placate the Ashlanders and discourage open rebellion against the Tribunal. Sul-Matuul, guardian of the Prophecy, scarred and banished the young warrior - a punishment worse than death.
+            </p>
+            <p>
+                On returning from absolution, Dalder-Sai and Aka-Lorna have stopped at the outskirts of Camp Urshilaku to give final offerings to their ancestors of the tribe. They are the last two of their lineage, and as such wish to say goodbye before departing on their ultimate exile.
+            </p>
+            <p>
+                Here we learn their relationship - that of grandfather and grandson. We don’t learn how Aka-Lorna’s parents were killed, only that they were lost tragically.
+            </p>
+            <p>
+                An additional dialogue option explores Dalder-Sai’s powers - explaining that his clairvoyance, illusion, and mysticism allows him to traverse the ashlands relatively unscathed. This would carry an undertone of his being somewhat more powerful than he lets on.
+            </p>
+            <p>
+                Dalder-Sai asks the player to take an offering to a nearby Shrine of Azura. This shrine is much smaller and simpler than the statue guarding Azura’s Coast, but faces the water along the northern coast near the camp to mirror that of its sister to the south. The older pilgrim requests that the player take black anther to the shrine, as an offering of simple and quiet strength in bitter times.
+            </p>
+            <p>
+                Aka-Lorna waits at the shrine, and approaches the player. He gives the player a chitin dagger and demands that they present it instead – an offering of aggression towards all outside threats. He says that his grandfather’s offering is kind but foolish, and that forceful resistance is needed in this desperate time. He is openly angry toward his former tribe, and curses them in the name of Azura.
+            </p>
+            <p>
+                On selecting the shrine, the player receives a prompt to give one of the two offerings. After presenting it, Part 3 will occur regardless, but the player can return to the pilgrim camp for additional dialogue.
+            </p>
+            <p>
+                If the player chose Dalder-Sai’s offering: Aka-Lorna is frustrated, but ultimately concedes that he may have acted brashly.
+            </p>
+            <p>
+                If the player chose Aka-Lorna’s offering: Dalder-Sai expresses uncharacteristic panic and anger, stating that such an offering invites violence. He cuts the conversation short, dismissing the player and refusing to speak further.
+            </p>
+
+            <h3 class="quest-title-buffer">
+                Part Three: Edge of the Ashlands
+            </h3>
+            <h4>
+                Ending One: Selected Dalder-Sai's Offering
+            </h4>
+            <p>
+                At the outskirts of Ald Velothi, a song of lament can be heard. The player finds Aka-Lorna kneeling before a sealed jar. His song is solemn but confident, and he speaks with a maturity that he did not possess before. He calls the player “Luhn’silvar”, as Dalder-Sai does in the first encounter, and explains that his grandfather said this is where he and the player would next meet.
+            </p>
+            <p>
+                The warrior-pilgrim explains that his grandfather passed peacefully after teaching him to let go of his anger. After spreading Dalder-Sai’s ashes among those of Vvardenfell, he will leave Morrowind to wander the world.
+            </p>
+            <p>
+                Aka-Lorna expresses his belief that the tribes may be wrong to remain on the island – that perhaps Veloth’s Pilgrimage was never meant to end in Morrowind, but rather to stretch beyond into uncertainty. He wonders if this was how the Chimer felt, leaving Summerset to seek a better life, and he thanks his grandfather for giving him the strength to question his teachings.
+            </p>
+            <p>
+                If the player has been named Hortator, Aka-Lorna expresses that he believes the player is the right “choice” for such a role, and that he hopes they will bring renewal to the misguided Dunmer. Regardless, his own fate lies on a different path.
+            </p>
+            <p>
+                At the end of the encounter, Aka-Lorna offers an amulet belonging to Dalder-Sai, saying that he would have wanted the player to have it. The amulet has a different name, description, and enchantment depending on the player’s offering for the shrine on Azura’s Coast (Pt. 1).
+            </p>
+
+            <h4>
+                Ending Two: Selected Aka-Lorna's Offering
+            </h4>
+            <p>
+                At the outskirts of Ald Velothi, there is no song. The player finds Dalder-Sai kneeling before a sealed jar. His voice is weak, too heavy with grief even to cry.
+            </p>
+            <p>
+                The pilgrim explains that his grandson was overtaken by anger and returned to the Urshilaku Camp, attacking Ashkhan Sul-Matuul outright. The Ashkhan slew him in front of the tribe, while the others held Dalder-Sai back. Nothing Dalder-Sai could do would dissuade him.
+            </p>
+            <p>
+                He asks the player if they remember “this”, and the chitin dagger is added to the player’s inventory. The player is given a speech check.
+            </p>
+            <p>
+                If the player passes: Dalder-Sai tells the player, with difficulty, that he understands – that outsiders do not know their ways, and that he should have presented the offering himself.
+            </p>
+            <p>
+                If the player fails: Dalder-Sai attacks, and the player is forced to kill him or flee. Dalder-Sai is an extremely tough fight, being an old and powerful sorcerer. He summons Daedric armor/weapons/allies and uses high level destruction magic.
+            </p>
+            <p>
+                (Continuing from passed speech check) Dalder-Sai laments the fate of the Dunmer, believing that Veloth’s Pilgrimage has failed. He will leave Morrowind in search of answers – resolving to find “the truth” – but his voice is strained and he seems, for the first time, lost.
+            </p>
+            <p>
+                At the end of the encounter, Dalder-Sai offers an amulet – saying he no longer needs it. The amulet is merely named “Bloodied Amulet of Azura”, and its enchantment should be purely offensive (Raise Blade/Destruction/etc, Drain Health, and so on). The description reads that it has an inscribed message, but it is obscured by dried blood.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

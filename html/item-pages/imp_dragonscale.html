@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Skywind | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="../../files/images/general/waveLight.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jQuery Files -->
+    <script src="../../js/jquery-3.6.4.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="../../js/main.js"></script>
+
+    <script>
+        function setPrevious(tab) {
+            localStorage.setItem("lastPage", tab);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar-image"></div>
+    
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="../../index.html#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="../../files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../../files/images/general/Email.png" alt="Email">
+                </a>
+            </div>    
+        </div>
+
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="../../files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
+
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="../../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
+
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="../../files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="../../index.html">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="../../index.html#name">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="../../index.html#about">
+                    About
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                        <img src="../../files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a href="mailto:chkorkos@gmail.com" target="_blank">
+                        <img src="../../files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header subpage-header-hidden">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                </a>
+            </div>
+
+            <div class="header-middle-buffer"></div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="subpage-header">
+        <div class="subpage-header-text">
+
+            <div class="subpage-header-side">
+                <a href="../skywind.html#skywind-tabs" onclick="setPrevious('items')">
+                    <img src="../../files/images/general/close.svg">
+                    <span>
+                        Close
+                    </span>
+                </a>
+            </div>
+
+            <div class="subpage-header-title">
+                <h2>
+                    Imperial Dragonscale Armor
+                </h2>
+            </div>
+
+            <div class="subpage-header-side header-right">
+                <!-- <a href="https://youtu.be/7_Bm0mtUFVE?t=15" target="_blank">
+                    <span>
+                        View
+                    </span>
+                    <img src="../../files/images/general/play.svg">
+                </a> -->
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="items-content">
+        <div>
+            <img 
+                id="dragon-helm"
+                class="modal-image"
+                onclick="openItemModal('#dragon-helm-modal')"
+                src="../../files/images/item_images_text/imp_dragonscale/imp_dragonscale-helm.png">
+        </div>
+        <div>
+            <img 
+                id="dragon-cuirass"
+                class="modal-image"
+                onclick="openItemModal('#dragon-cuirass-modal')"
+                src="../../files/images/item_images_text/imp_dragonscale/imp_dragonscale-cuirass.png">
+        </div>
+        <div>
+            <img 
+                id="dragon-gauntlets"
+                class="modal-image"
+                onclick="openItemModal('#dragon-gauntlets-modal')"
+                src="../../files/images/item_images_text/imp_dragonscale/imp_dragonscale-gauntlets.png">
+        </div>
+        <div>
+            <img 
+                id="dragon-boots"
+                class="modal-image"
+                onclick="openItemModal('#dragon-boots-modal')"
+                src="../../files/images/item_images_text/imp_dragonscale/imp_dragonscale-boots.png">
+        </div>
+        <div>
+            <img 
+                id="dragon-pauldron-R"
+                class="modal-image"
+                onclick="openItemModal('#dragon-pauldron_R-modal')"
+                src="../../files/images/item_images_text/imp_dragonscale/imp_dragonscale-pauldron_R.png">
+        </div>
+        <div>
+            <img 
+                id="dragon-pauldron-L"
+                class="modal-image"
+                onclick="openItemModal('#dragon-pauldron_L-modal')"
+                src="../../files/images/item_images_text/imp_dragonscale/imp_dragonscale-pauldron_L.png">
+        </div>
+        <div>
+            <img 
+                id="dragon-greaves"
+                class="modal-image"
+                onclick="openItemModal('#dragon-greaves-modal')"
+                src="../../files/images/item_images_text/imp_dragonscale/imp_dragonscale-greaves.png">
+        </div>
+        <div>
+            <img 
+                id="dragon-buckler"
+                class="modal-image"
+                onclick="openItemModal('#dragon-buckler-modal')"
+                src="../../files/images/item_images_text/imp_dragonscale/imp_dragonscale-buckler.png">
+        </div>
+        <div>
+            <img 
+                id="dragon-shield"
+                class="modal-image"
+                onclick="openItemModal('#dragon-shield-modal')"
+                src="../../files/images/item_images_text/imp_dragonscale/imp_dragonscale-shield.png">
+        </div>
+        <div>
+            <img 
+                id="dragon-tower"
+                class="modal-image"
+                onclick="openItemModal('#dragon-tower-modal')"
+                src="../../files/images/item_images_text/imp_dragonscale/imp_dragonscale-tower.png">
+        </div>
+    </div>
+
+    <div id="dragon-helm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Dragonscale Helm</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Helm - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This helm wreathes your face in a crown of blackened steel and burnished scales. The God of Time, venerated since before the fall of Atmora, roosts in stygian glory on its crest.
+                        <br><br>
+                        In the beginning, the notes were discordant, uncertain, lacking sequence. Then Akatosh birthed himself from the Gray Maybe, coaxed harmony from cacophony, and Time began.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dragon-cuirass-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Dragonscale Cuirass</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Cuirass - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A suit of armor crafted in the half-scaled style of the ancient Tsaesci. The snake-folk venerated the undying dragons, and once sought to mantle them.
+                        <br><br>
+                        The most fervent Imperial Cultists preserve an Akaviri belief that the blood of Dragonborn rulers contains a map of eternity - an atlas of Time itself.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dragon-gauntlets-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Dragonscale Gauntlets</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Gauntlets - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Layers of burnished scale guard your forearms like rows of fangs. The straps securing them are a haphazard assortment of cloth and leather from beyond Cyrodill, as though replaced piecemeal by their former owners.
+                        <br><br>
+                        In legends, dragons pillage defeated kin - donning their foe's scales to replace those lost in the battle, and consuming the fallen's very essence to enhance their power.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dragon-boots-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Dragonscale Boots</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Boots - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Open sandals and venom-elk leather straps clasp the jagged hide of a Nibenese river dragon to your shins. The scales honor Merethic warriors, said to craft armor from the holy beasts.
+                        <br><br>
+                        At time's dawn, the wandering spirits of humanity came to Atmora's frigid shores and met with an empire of dragons. Eons later, Atmora's temples stand skeletal against the gray skies, and its soaring stone cities lie crowned by coral beneath the Sea of Ghosts.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dragon-pauldron_R-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Dragonscale Right Pauldron</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldron (R) - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This steel and bone pauldron perches atop your shoulder, extending downward with a hooked claw. The armor's organic elements express a savagery infrequently found among the disciplined soldiers of the Legion.
+                        <br><br>
+                        Legionnaires stationed far from the Imperial core sometimes turn to banditry. The boldest of these marauders craft armor embodying the beasts whose divine terror is engraved in song.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dragon-pauldron_L-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Dragonscale Left Pauldron</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Pauldron (L) - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This steel and bone pauldron sits above a dull bronze band. The tarnished symbols of company and rank mock the Red Legion's severity, but some exiles cling to them in hope of redemption.
+                        <br><br>
+                        The Children of Akatosh are aberrations upon the world - divine interference in a mighty engine of precise clockwork. Whether or not they truly lived, few would call for their return.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dragon-greaves-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Dragonscale Greaves</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Greaves - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        Overlapping ridges of veil-fox bone and wamasu hide compose these versatile greaves. It is a testament to Colovia's masterful blacksmiths that the scales so closely resemble those of the undying dragons.
+                        <br><br>
+                        Disputed sources as late as the Third Era assert that the dragons are more than myth. Such believers claim they were the psychopomps who led Reman's Mananauts to the outer realms.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dragon-buckler-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Dragonscale Buckler Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Buckler Shield - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        A barbaric steel spike graces this square shield of river dragon hide. Its handle is wrapped in crimson cloth - an acknowledgment of old loyalties, or perhaps simply the residue of its late bearer.
+                        <br><br>
+                        "What is the weight of one soul against the eternal measure of an empire?"
+                        <br>
+                        - Zurin Arctus, upon his death before the Mantella
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dragon-shield-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Dragonscale Standard Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Standard Shield - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        This shield of layered scale and spiderwebbed steel protects you from blade and flame. In Colovian tradition, its inner fringe is inscribed with prayers of strength and courage from each of its bearers.
+                        <br><br>
+                        "I return to the Sky's Rim, where my voice is the trembling of the earth and the shifting of storms."
+                        <br>
+                        - Ysmir Wulfharth, upon his second death at Red Mountain
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="dragon-tower-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">
+                    &times;
+                </span>
+                <h2>Imperial Dragonscale Tower Shield</h2>
+            </div>
+            <div class="modal-body">
+                <p class="subheader">
+                    Item Type
+                </p>
+                <ul>
+                    <li>
+                        Tower Shield - Medium Armor
+                    </li>
+                    <li>
+                        Not Enchanted
+                    </li>
+                </ul>
+
+                <p class="subheader">
+                    Description
+                </p>
+                <ul>
+                    <li style="font-style: italic;">
+                        The contours of this great scaled bastion are useful in phalanx warfare - forming windows for arrows and spears to slay oncoming foes. Even those who abandon the Legion are slow to forget its unparalleled tactics.
+                        <br><br>
+                        "I breathe now, in royalty, and reshape this land which is mine. I do this for you, Red Legions, for I love you!" 
+                        <br>
+                        - Tiber Septim, upon the unification of Tamriel
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
