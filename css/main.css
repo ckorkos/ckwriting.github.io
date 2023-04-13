@@ -624,6 +624,10 @@ button:hover {
     object-position: 0 10%;
 }
 
+#credits-banner {
+    object-position: 0 55%;
+}
+
 .quest-content h3 {
     text-transform: uppercase;
 }
@@ -869,12 +873,11 @@ button:hover {
     }
     .project-header-image img {
         width: 80% !important;
-        padding-left: 10%;
     }
-    .project-header-image button {
+    /* .project-header-image button {
         width: 90%;
         margin-left: 10%;
-    }
+    } */
     .project-header-text {
         padding-left: 0 !important;
         width: 100% !important;
@@ -918,6 +921,15 @@ button:hover {
 }
 
 @media screen and (max-width: 500px) {
+    #about-picture {
+        max-width: 80% !important;
+    }
+    .project-card {
+        width: 80% !important;
+    }
+    .homepage-hr {
+        width: 80% !important;
+    }
     .subpage-header {
         padding-top: 0;
     }
