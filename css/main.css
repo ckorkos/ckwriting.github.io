@@ -637,8 +637,7 @@ button:hover {
 
 .item-set-square p, .item-set-square span {
     color: white;
-    
-    font-family: 'Fondamento' !important;
+    font-family: 'Fondamento', cursive !important;
     text-align: center;
 }
 
