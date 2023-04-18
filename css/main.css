@@ -605,9 +605,9 @@ button:hover {
 
 .item-set-square {
     position: relative;
-    max-width: 150px;
-    width: 150px !important;
-    height: 150px;
+    max-width: 200px;
+    width: 200px !important;
+    height: 200px;
     border: 2px solid white;
     flex-grow: 1 !important;
 }
@@ -618,6 +618,7 @@ button:hover {
 
 .item-set-square p {
     width: 100%;
+    font-size: 18px;
     position: absolute;
     bottom: 0px;
     margin: 0;
@@ -630,7 +631,7 @@ button:hover {
     font-size: 12px;
     padding-top: 3px;
     margin-left: 8px !important;
-    width: 134px;
+    width: 184px;
     text-align: center;
     border-top: 0.2px solid white;
 }
