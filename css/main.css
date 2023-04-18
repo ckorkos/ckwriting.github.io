@@ -12,6 +12,7 @@ html, body {
 
 body {
     margin: 0;
+    overflow: auto;
 }
 
 hr {
@@ -191,6 +192,17 @@ button:hover {
     align-items: center;
 }
 
+.section-header {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-subheader {
+    margin-top: 0px;
+    text-align: center;
+}
+
 .project-card a {
     width: 100%;
     color: white;
@@ -244,10 +256,26 @@ button:hover {
     padding-bottom: 8px;
 }
 
+/* Home Page: Highlights */
+#home-samples {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    width: 60%;
+    padding-left: 20%;
+}
+
+#home-samples img {
+    height: 100%;
+    object-fit: cover !important;
+}
+
 /* Home Page: About Me */
 #about {
     width: 60%;
-    padding-top: 16px;
+    /* padding-top: 16px; */
     padding-left: 20%;
     padding-right: 20%;
 
@@ -591,16 +619,26 @@ button:hover {
 .item-set-square p {
     width: 100%;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     margin: 0;
+    padding-bottom: 2px;
+    background: rgba(47,47,47,0.5);
+}
 
+.item-set-square span {
+    display: block;
+    font-size: 12px;
+    padding-top: 3px;
+    margin-left: 8px !important;
+    width: 134px;
+    text-align: center;
+    border-top: 0.2px solid white;
+}
+
+.item-set-square p, .item-set-square span {
     color: white;
+    
     font-family: 'Fondamento' !important;
-    text-shadow: -0.6px 0.6px 0 #545454,
-                          0.6px 0.6px 0 #545454,
-                          0.6px -0.6px 0 #545454,
-                        -0.6px -0.6px 0 #545454;
-                        /* 2f2f2f */
     text-align: center;
 }
 
@@ -655,6 +693,10 @@ button:hover {
 }
 
 /* Subpage */
+#landscaping-content img {
+    object-position: 0 65%;
+}
+
 .subpage-header {
     padding-top: 24px;
     position: relative;
@@ -929,6 +971,10 @@ button:hover {
     }
     .homepage-hr {
         width: 80% !important;
+    }
+    #highlights {
+        width: 80%;
+        padding-left: 10%;
     }
     .subpage-header {
         padding-top: 0;
