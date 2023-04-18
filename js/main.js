@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var prev = localStorage.getItem("lastPage");
 
-    if(prev==="items" || prev==="quests") {
+    if(prev==="items" || prev==="quests" || prev==="other") {
         // Change to specified tab
         changeSkywindTab(prev);
 
@@ -66,16 +66,25 @@ function closeHamburger() {
 // Open Item Modal
 function openItemModal(itemID) {
     $(itemID).css("display", "block");
-    // $("body").css("position", "fixed");
 
-    //TODO - CURRENTLY MOVING TO TOP OF SCREEN; NEED TO STAY AT CURRENT SCROLL POSITION
-    $("body").css("top", "-${window.scrollY}px");
+    document.body.style.top = `-${window.scrollY}px`;
+    document.body.style.position = 'fixed';
+    document.body.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 // Close Item Modal
 function closeModal() {
     $(".modal").css("display", "none");
-    $("body").css("position", "relative");
+    
+    document.body.style.position = 'relative';
+    document.body.style.height = 'auto';
+    document.body.style.overflow = 'auto';
+
+    const scrollY = document.body.style.top;
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
 }
 
 // Switch Item Modal
