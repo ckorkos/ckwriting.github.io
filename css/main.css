@@ -262,7 +262,6 @@ button:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
     width: 60%;
     padding-left: 20%;
 }
@@ -606,6 +605,7 @@ button:hover {
 .item-set-square {
     position: relative;
     max-width: 200px;
+    min-width: 200px;
     width: 200px !important;
     height: 200px;
     border: 2px solid white;
@@ -630,8 +630,8 @@ button:hover {
     display: block;
     font-size: 12px;
     padding-top: 3px;
-    margin-left: 8px !important;
-    width: 184px;
+    margin-left: 5% !important;
+    width: 90%;
     text-align: center;
     border-top: 0.2px solid white;
 }
