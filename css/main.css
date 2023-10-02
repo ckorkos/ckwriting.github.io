@@ -91,11 +91,15 @@ button:hover {
     color: white;
     margin-right: 24px;
     font-size: 16px;
+    height: 100%;
+    line-height: 80px;
 }
 
 .nav div a {
     color: white;
     text-decoration: none;
+    height: 100%;
+    display: block;
 }
 
 .nav div a img {
@@ -668,6 +672,10 @@ button:hover {
 
 .quest-content h3 {
     text-transform: uppercase;
+}
+
+#azura-banner {
+    object-position: 0 40%;
 }
 
 #exiles-banner {
