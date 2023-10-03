@@ -102,6 +102,10 @@ button:hover {
     display: block;
 }
 
+.nav div a:hover {
+    color: #FF7542 !important;
+}
+
 .nav div a img {
     height: 24px;
     width: auto;
