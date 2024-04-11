@@ -15,6 +15,11 @@ body {
     overflow: auto;
 }
 
+footer {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
 hr {
     position: relative;
     border: 1px solid #D5D5D5;
@@ -50,8 +55,8 @@ button:hover {
 }
 
 .site-icon {
-    height: 32px;
-    width: auto;
+    width: 40px;
+    height: auto;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -67,10 +72,11 @@ button:hover {
     overflow: hidden;
     z-index: -1;
 
-    background-image: url("../files/images/screenshots/skywind-shipwreck-dark.jpg");
+    background-color: #1A1A1A;
+    /* background-image: url("../files/images/screenshots/skywind-shipwreck-dark.jpg");
     background-size: cover;
     filter: blur(3px);
-    -webkit-filter: blur(3px);
+    -webkit-filter: blur(3px); */
 }
 
 .nav {
@@ -117,13 +123,21 @@ button:hover {
     flex-grow: 1;
 }
 
+.nav div:first-child:hover {
+    cursor: default;
+}
+
 .nav div:first-child span {
     color: white;
-    margin-left: 40px;
+    margin-left: 48px;
+    font-size: 20px;
+    font-family: "Megrim" !important;
 }
 
 .nav div:first-child span b {
     color: white;
+    font-size: 20px;
+    font-family: "Megrim" !important;
 }
 
 .item-left {
@@ -193,10 +207,15 @@ button:hover {
 }
 
 #projects {
+    width: 60%;
     height: fit-content;
+    margin-left: 20%;
+    margin-right: 20%;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
     align-items: center;
 }
 
@@ -209,6 +228,10 @@ button:hover {
 .section-subheader {
     margin-top: 0px;
     text-align: center;
+}
+
+.project-card {
+    margin-bottom: 20px;
 }
 
 .project-card a {
@@ -224,6 +247,8 @@ button:hover {
 .project-card img {
     width: 100%;
     height: auto;
+    max-height: 150px;
+    object-fit: cover;
 }
 
 .project-card div {
@@ -248,9 +273,23 @@ button:hover {
     align-self: flex-start;
 }
 
+#sojourn {
+    position: relative;
+    height: auto;
+    display: flex;
+}
+
+#sojourn-card-text {
+    opacity: 0;
+    width: 100%;
+}
+
+#sojourn-card-text h3 {
+    padding-bottom: 8px;
+}
+
 #skywind {
     position: relative;
-    width: 60%;
     height: auto;
     display: flex;
 }
@@ -349,6 +388,7 @@ button:hover {
     width: 100%;
     height: auto;
     align-self: flex-start;
+    border-radius: 3px;
 }
 
 .project-header-image button {
@@ -398,6 +438,7 @@ button:hover {
 .project-social-links {
     display: inline-flex;
     padding-top: 16px;
+    gap: 8px;
 }
 
 .project-social-links div {
@@ -520,6 +561,50 @@ button:hover {
     flex-wrap: wrap;
 }
 
+.page-content a {
+    color: #FF7542 !important;
+    text-decoration: none;
+}
+
+.page-content a:hover {
+    text-decoration: underline;
+}
+
+.page-content p {
+    margin-bottom: 40px;
+}
+
+.page-content .quest-title-buffer:first-child {
+    margin-top: 0 !important;
+}
+
+.page-content table {
+    width: 100%;
+    text-align: left;
+}
+
+.page-content table tr:first-child th {
+    color: white;
+    background-color: #1A1A1A;
+    font-weight: normal !important;
+}
+
+.page-content table td {
+    background-color: #f2f2f2;
+}
+
+.page-content table td:last-child {
+    font-style: italic;
+}
+
+.page-content th {
+    padding: 8px;
+}
+
+.page-content td {
+    padding: 8px;
+}
+
 .content-selected {
     display: flex !important;
 }
@@ -543,6 +628,16 @@ button:hover {
 .content-image {
     flex-basis: 0;
     flex-grow: 5;
+}
+
+.content-banner {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content-banner:first-child {
+    margin-bottom: 40px;
 }
 
 .content-text {
@@ -583,13 +678,14 @@ button:hover {
 }
 
 .content-button-secondary img {
-    width: 12px;
-    height: auto;
+    height: 16px;
+    width: auto;
     vertical-align: middle;
 }
 
 .content-rule {
     display: block;
+    width: 100%;
 }
 
 .content-rule hr {
@@ -694,14 +790,17 @@ button:hover {
     padding-bottom: 12px;
 }
 
-.quest-title-buffer {
-    margin-top: 40px;
-}
-
 /* Tab: Other */
 #content-other {
     flex-direction: column;
     gap: 40px;
+}
+
+/* Tab: Sojourn Game Art */
+.art-description {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* Subpage */
@@ -888,6 +987,12 @@ button:hover {
 }
 
 /* Media Query Breakpoints */
+@media screen and (max-width: 1110px) {
+    .project-card img {
+        max-height: 138px;
+    }
+}
+
 @media screen and (max-width: 1080px) {
     .project-header {
         padding-top: 24px !important;
@@ -913,6 +1018,14 @@ button:hover {
         padding-left: 20%;
         padding-right: 20%;
         align-self: center;
+    }
+    #projects {
+        grid-auto-flow: row;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+    }
+    .project-card img {
+        max-height: 250px;
     }
 }
 
@@ -946,10 +1059,6 @@ button:hover {
     .project-header-image img {
         width: 80% !important;
     }
-    /* .project-header-image button {
-        width: 90%;
-        margin-left: 10%;
-    } */
     .project-header-text {
         padding-left: 0 !important;
         width: 100% !important;
@@ -978,6 +1087,9 @@ button:hover {
     .items-content div {
         height: auto;
     }
+    .project-card img {
+        max-height: 180px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -990,6 +1102,12 @@ button:hover {
     .subpage-header-side {
         width: 10%;
     }
+    .project-card img {
+        max-height: 150px;
+    }
+    /* #sojourn-image {
+        content: url('../files/images/thumbnails/sojourn-thumb-name-sm.png');
+    } */
 }
 
 @media screen and (max-width: 500px) {
@@ -1027,6 +1145,15 @@ button:hover {
 @media screen and (max-width: 450px) {
     .modal-image {
         width: 300px !important;
+    }
+    .project-card img {
+        max-height: 130px;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    #sojourn-links .content-button-secondary {
+        height: 56px;
     }
 }
 
