@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Writing Portfolio | Christopher Korkos</title>
-    <link rel="icon" type="image/x-icon" href="./files/images/general/waveLight.ico">
+    <link rel="icon" type="image/x-icon" href="./files/images/general/ck-logo.ico">
 
     <!-- Font: Avenir -->
     <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
@@ -14,6 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+
+    <!-- Font: Megrim -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
@@ -35,7 +40,7 @@
     
         <div id="navbar" class="nav">
             <div class="item-left">
-                <img class="site-icon" src="files/images/general/waveLight.ico" alt="Site Icon">
+                <img class="site-icon" src="files/images/general/ck-logo.ico" alt="Site Icon">
                 <span><b>Christopher</b> Korkos</span>
             </div>
             <div class="item-right">
@@ -75,7 +80,7 @@
 
         <div id="navbar-collapse" class="nav">
             <div class="item-left">
-                <img class="site-icon" src="files/images/general/waveLight.ico" alt="Site Icon">
+                <img class="site-icon" src="files/images/general/ck-logo.ico" alt="Site Icon">
                 <span><b>Christopher</b> Korkos</span>
             </div>
 
@@ -154,19 +159,34 @@
 
     <hr class="homepage-hr">
 
+    <!-- Projects Title -->
+    <h3 class="section-header">
+        Projects
+    </h3>
+
     <!-- Projects -->
     <div id="projects">
-
-        <!-- Projects Title -->
-        <h3 class="section-header">
-            Projects
-        </h3>
 
         <!-- Help Text -->
         <!-- <h5 class="section-subheader">
             Click to view a project.
         </h5> -->
 
+        <!-- Sojourn -->
+        <div id="sojourn" class="project-card">
+            <a href="./html/sojourn.html" onmouseover="changeBG('sojourn-image')" onmouseout="revertBG('sojourn-image')">
+                <div id="sojourn-card-text">
+                    <h3>
+                        Project: Sojourn
+                    </h3>
+                    <h3>
+                        Role: Writer, Designer, Developer
+                    </h3>
+                </div>
+                <img id="sojourn-image" src="./files/images/thumbnails/sojourn-thumb-name-sm.png" alt="">
+            </a>
+        </div>
+        
         <!-- Skywind -->
         <div id="skywind" class="project-card">
             <a href="./html/skywind.html" onmouseover="changeBG('skywind-image')" onmouseout="revertBG('skywind-image')">
@@ -324,12 +344,19 @@
         </div>
         <div id="about-text">
             <p>
-                Since childhood, I've embraced the genres within speculative fiction. To me, fantasy was the call to adventure that lives in us all. Science fiction, however, was appropriately cosmic - crafting utopian dreams which we must strive to build, or twisted realities driven by our most sinister natures.
+                Since childhood, I've loved fantasy and science fiction. Where fantasy was the call to adventure, science fiction was appropriately cosmic - crafting utopian dreams which we must strive to build, or twisted realities driven by our most sinister natures.
                 <br><br>
-                I completed a Minor in Literature Writing at University of California, San Diego, but I've continued my journey as a writer beyond education. My goal is to write for the field of game design, which merges the disciplines of art, technology, music, drama, and narrative to bring life to these many worlds.
+                I studied Literature Writing and Human-Computer Interaction at University of California, San Diego, but I've continued my journey as a writer beyond education. My goal is to write for game development, which merges the disciplines of art, technology, music, drama, and narrative to bring life to these many worlds.
             </p>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">&copy; Christopher Korkos 2024</p>
+        </div>
+    </footer>
 </body>
 
 </html>
