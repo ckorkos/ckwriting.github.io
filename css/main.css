@@ -73,10 +73,13 @@ button:hover {
     z-index: -1;
 
     background-color: #1A1A1A;
-    /* background-image: url("../files/images/screenshots/skywind-shipwreck-dark.jpg");
+    /* background-image: url("../files/images/screenshots/starscape.png"); */
+    background-image: url("../files/images/screenshots/starmap.jpg");
     background-size: cover;
-    filter: blur(3px);
-    -webkit-filter: blur(3px); */
+    background-position: center;
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px); */
+    filter: brightness(25%);
 }
 
 .nav {
