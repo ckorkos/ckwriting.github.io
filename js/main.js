@@ -19,17 +19,25 @@ $(document).ready(function() {
 
 // Change Project Thumbnails on Hover-In
 function changeBG(project) {
-    if(project==="skywind-image") {
-        document.getElementById(project).src = "./files/images/thumbnails/skywind-thumb-hover.png";
-        document.getElementById("skywind-card-text").style.opacity = 1;
+    if(project==="sojourn-image") {
+        document.getElementById(project).src = "./files/images/thumbnails/sojourn-thumb-name-sm-hover.png";
+        //document.getElementById("sojourn-card-text").style.opacity = 1;
+    }
+    else if(project==="skywind-image") {
+        document.getElementById(project).src = "./files/images/thumbnails/skywind-thumb-hover-alt.png";
+        //document.getElementById("skywind-card-text").style.opacity = 1;
     }
 }
 
 // Change Project Thumbnails on Hover-Out
 function revertBG(project) {
-    if(project==="skywind-image") {
+    if(project==="sojourn-image") {
+        document.getElementById(project).src = "./files/images/thumbnails/sojourn-thumb-name-sm.png";
+        //document.getElementById("skywind-card-text").style.opacity = 0;
+    }
+    else if(project==="skywind-image") {
         document.getElementById(project).src = "./files/images/thumbnails/skywind-thumb.png";
-        document.getElementById("skywind-card-text").style.opacity = 0;
+        //document.getElementById("skywind-card-text").style.opacity = 0;
     }
 }
 
@@ -93,7 +101,62 @@ function switchItemModal(itemID) {
     openItemModal(itemID);
 }
 
-// Skywind - Link Selections
+// Sojourn - Tab Selections
+function changeSojournTab(tab) {
+    // Check window width, close hamburger if visible
+    if($(window).width()<=900) {
+        closeHamburger();
+        console.log("true");
+    }
+
+    // Remove Current "Selected" Styling
+    $(".project-tab-name").removeClass("tab-selected");
+    $(".menu-option").removeClass("tab-selected");
+    $(".page-content").removeClass("content-selected");
+
+    if(tab==="story") {
+        // Change Navbar Option Styling
+        $("#sojourn-story, #sojourn-story-menu").addClass("tab-selected");
+
+        // Display Encounters Tab, Hide Others
+        $("#content-story").addClass("content-selected");
+
+        // Change Collapsed Header Text
+        $("#collapse-header").text("Story");
+    }
+    else if(tab==="narrative") {
+        // Change Navbar Option Styling
+        $("#sojourn-narrative, #sojourn-narrative-menu").addClass("tab-selected");
+
+        // Display Encounters Tab, Hide Others
+        $("#content-narrative").addClass("content-selected");
+
+        // Change Collapsed Header Text
+        $("#collapse-header").text("Narrative Design");
+    }
+    else if(tab==="art") {
+        // Change Navbar Option Styling
+        $("#sojourn-art, #sojourn-art-menu").addClass("tab-selected");
+
+        // Display Quests Tab, Hide Others
+        $("#content-art").addClass("content-selected");
+
+        // Change Collapsed Header Text
+        $("#collapse-header").text("Art");
+    }
+    else if(tab==="development") {
+        // Change Navbar Option Styling
+        $("#sojourn-development, #sojourn-development-menu").addClass("tab-selected");
+
+        // Display Other Tab, Hide Others
+        $("#content-development").addClass("content-selected");
+
+        // Change Collapsed Header Text
+        $("#collapse-header").text("Development");
+    }
+}
+
+// Skywind - Tab Selections
 function changeSkywindTab(tab) {
     // Check window width, close hamburger if visible
     if($(window).width()<=900) {
