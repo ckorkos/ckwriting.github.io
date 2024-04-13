@@ -79,7 +79,7 @@ button:hover {
     background-position: center;
     /* filter: blur(1px);
     -webkit-filter: blur(1px); */
-    filter: brightness(25%);
+    filter: brightness(40%);
 }
 
 .nav {
