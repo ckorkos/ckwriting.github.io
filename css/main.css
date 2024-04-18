@@ -1232,7 +1232,7 @@ button:hover {
         margin-left: 20%;
     }
     .play-card-text h1 {
-        text-align: center;
+        display: none;
     }
     .play-card-text h4 {
         text-align: center;
