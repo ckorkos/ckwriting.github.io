@@ -456,6 +456,70 @@ button:hover {
     align-self: center;
 }
 
+#sojourn-play-card {
+    background-color: #141414;
+    border: 4px solid #3f3f3f;
+    padding: 12px;
+    display: inline-grid;
+    grid-template-columns: 40% 60%;
+}
+
+#sojourn-play-card h1 {
+    font-family: 'Megrim' !important;
+    color: white !important;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+
+#sojourn-play-card h4 span {
+    color: gray;
+}
+
+#sojourn-play-card h4 {
+    color: white !important;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+}
+
+#sojourn-play-card p {
+    color: white !important;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 50;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#sojourn-play-card .play-card-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 1px solid #3f3f3f;
+    margin-right: 5%;
+}
+
+#sojourn-play-card img {
+    width: 95%;
+    height: auto;
+}
+
+#sojourn-play-card .play-card-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sojourn-play-card button {
+    color: white;
+    background-color: #FF7542;
+}
+
 /* Project Tabs */
 .project-tabs {
     width: 80%;
@@ -1032,6 +1096,13 @@ button:hover {
     }
 }
 
+@media screen and (max-width: 1004px) {
+    #sojourn-links button {
+        height: 48px !important;
+    }
+}
+
+/* TODO - fix sizing below 500px width */
 @media screen and (max-width: 900px) {
     #navbar {
         display: none;
@@ -1039,10 +1110,6 @@ button:hover {
     #navbar-collapse {
         display: flex;
     }
-}
-
-/* TODO - fix sizing below 500px width */
-@media screen and (max-width: 900px) {
     .project-header {
         flex-direction: column !important;
         flex-wrap: wrap !important;
@@ -1056,11 +1123,10 @@ button:hover {
     }
     .project-header-image {
         flex-wrap: wrap !important;
-        width: 100% !important;
         align-content: center !important;
-    }
-    .project-header-image img {
-        width: 80% !important;
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 16px;
     }
     .project-header-text {
         padding-left: 0 !important;
@@ -1108,9 +1174,6 @@ button:hover {
     .project-card img {
         max-height: 150px;
     }
-    /* #sojourn-image {
-        content: url('../files/images/thumbnails/sojourn-thumb-name-sm.png');
-    } */
 }
 
 @media screen and (max-width: 500px) {
@@ -1148,6 +1211,31 @@ button:hover {
     }
     .project-card img {
         max-height: 130px;
+    }
+    .project-header-image {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+    .project-header-image img {
+        width: 100%;
+    }
+    #sojourn-play-card {
+        display: block;
+    }
+    .play-card-img {
+        flex-direction: row;
+        margin-right: 0 !important;
+        border-right: none !important;
+    }
+    .play-card-img img {
+        width: 60% !important;
+        margin-left: 20%;
+    }
+    .play-card-text h1 {
+        text-align: center;
+    }
+    .play-card-text h4 {
+        text-align: center;
     }
 }
 
