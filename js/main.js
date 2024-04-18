@@ -17,6 +17,14 @@ $(document).ready(function() {
     localStorage.clear();
 });
 
+// $(document).ready(function() {
+//     var embedLink = document.getElementById("sojourn-play-embed");
+
+//     console.log(embedLink.innerHTML);
+
+//     addEventListener("error", (event) => {console.log("embed error")});
+// });
+
 // Change Project Thumbnails on Hover-In
 function changeBG(project) {
     if(project==="sojourn-image") {
