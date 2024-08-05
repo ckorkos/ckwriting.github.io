@@ -1271,17 +1271,12 @@ button:hover {
 }
 
 @media screen and (min-width: 1400px) {
-    /* #projects .project-card {
-        max-height: 180px;
-        width: 80%;
-        margin-left: 10%;
-    } */
     .homepage-hr {
         width: 60%;
     }
-    /* .project-header-image {
+    .project-header-image {
         width: 40%;
-    } */
+    }
 }
 
 @media screen and (min-width: 1300px) {
