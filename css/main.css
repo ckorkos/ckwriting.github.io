@@ -1270,6 +1270,12 @@ button:hover {
     }
 }
 
+@media screen and (min-width: 1500px) {
+    #projects .project-card img {
+        max-height: 230px !important;
+    }
+}
+
 @media screen and (min-width: 1400px) {
     .homepage-hr {
         width: 60%;
