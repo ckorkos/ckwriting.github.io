@@ -17,14 +17,6 @@ $(document).ready(function() {
     localStorage.clear();
 });
 
-// $(document).ready(function() {
-//     var embedLink = document.getElementById("sojourn-play-embed");
-
-//     console.log(embedLink.innerHTML);
-
-//     addEventListener("error", (event) => {console.log("embed error")});
-// });
-
 // Change Project Thumbnails on Hover-In
 function changeBG(project) {
     if(project==="sojourn-image") {
@@ -216,5 +208,40 @@ function changeSkywindTab(tab) {
 
         // Change Collapsed Header Text
         $("#collapse-header").text("Other");
+    }
+}
+
+// Change Tab on "Eyewitness" Page
+function changeEyeTab(tab) {
+    // Check window width, close hamburger if visible
+    if($(window).width()<=900) {
+        closeHamburger();
+        console.log("true");
+    }
+
+    // Remove Current "Selected" Styling
+    $(".project-tab-name").removeClass("tab-selected");
+    $(".menu-option").removeClass("tab-selected");
+    $(".page-content").removeClass("content-selected");
+
+    if(tab==="story") {
+        // Change Navbar Option Styling
+        $("#eye-story, #eye-story-menu").addClass("tab-selected");
+
+        // Display Encounters Tab, Hide Others
+        $("#eye-content-story").addClass("content-selected");
+
+        // Change Collapsed Header Text
+        $("#collapse-header").text("Story");
+    }
+    else if(tab==="panels") {
+        // Change Navbar Option Styling
+        $("#eye-panels, #eye-panels-menu").addClass("tab-selected");
+
+        // Display Items Tab, Hide Others
+        $("#eye-content-panels").addClass("content-selected");
+
+        // Change Collapsed Header Text
+        $("#collapse-header").text("Comic Panel Notes");
     }
 }
