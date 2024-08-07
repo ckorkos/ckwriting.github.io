@@ -638,6 +638,12 @@ button:hover {
     font-weight: lighter;
 }
 
+.page-border {
+    width: 80%;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
 .page-content {
     display: none;
     width: 80%;
@@ -648,6 +654,16 @@ button:hover {
 }
 
 .page-content a {
+    color: #FF7542 !important;
+    text-decoration: none;
+}
+
+.project-header a {
+    color: #FF7542 !important;
+    text-decoration: none;
+}
+
+.project-header a i {
     color: #FF7542 !important;
     text-decoration: none;
 }
@@ -679,7 +695,7 @@ button:hover {
     background-color: #f2f2f2;
 }
 
-.page-content table td:last-child {
+.page-content #sojourn-item-descrips td:last-child {
     font-style: italic;
 }
 
@@ -689,6 +705,10 @@ button:hover {
 
 .page-content td {
     padding: 8px;
+}
+
+.content-selected {
+    display: block !important;
 }
 
 .content-selected {
@@ -790,6 +810,45 @@ button:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#eyewitness p {
+    background: rgba(47,47,47,0.8);
+}
+
+.eye-content h2 {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.eye-content h5 {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+}
+
+#eye-content-story p {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#eye-content-panels ul {
+    width: 60%;
+    margin-left: 20%;
+}
+
+#eye-content-panels table ul {
+    margin-left: 0 !important;
+}
+
+#eye-content-panels table td {
+    vertical-align: top;
+    text-align: center;
+}
+
+#eye-content-panels table td ul {
+    text-align: left !important;
 }
 
 .item-set-square {
